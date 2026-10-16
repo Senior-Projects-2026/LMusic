@@ -1,0 +1,9 @@
+[tool.ruff]
+# Maximum line length
+line-length = 88
+# Target Python version
+target-version = "py310"
+
+[tool.ruff.lint]
+# Enable basic rules (E, F) and import sorting (I)
+select = ["E", "F", "I"]
