@@ -1,0 +1,15 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+data/raw/
+models/
+*.gguf
+*.safetensors
+.DS_Store
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
