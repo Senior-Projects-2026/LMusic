@@ -1,4 +1,4 @@
-﻿## 1. Problem Definition & Motivation
+## 1. Problem Definition & Motivation
 
 Songwriters and artists frequently experience creative blocks, particularly when attempting to marry raw emotional expression with **strict musical constraints**. Writing a successful song is not merely about generating creative text; it requires maintaining a consistent rhythmic meter, adhering to precise syllable counts per line, and executing structured rhyme schemes (such as AABB or ABAB) so that the lyrics naturally fit a vocal melody.
 
