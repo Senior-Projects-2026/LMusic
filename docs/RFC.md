@@ -1,4 +1,4 @@
-## 1. Problem Definition & Motivation
+﻿## 1. Problem Definition & Motivation
 
 Songwriters and artists frequently experience creative blocks, particularly when attempting to marry raw emotional expression with **strict musical constraints**. Writing a successful song is not merely about generating creative text; it requires maintaining a consistent rhythmic meter, adhering to precise syllable counts per line, and executing structured rhyme schemes (such as AABB or ABAB) so that the lyrics naturally fit a vocal melody.
 
@@ -7,6 +7,7 @@ While standard, off-the-shelf Large Language Models (LLMs) like ChatGPT or Claud
 The **core goal** of this project is to solve these limitations by developing an intelligent, musically-aware assistant capable of generating *structured, emotionally resonant, and rhythmically valid* lyrics. By bridging the gap between open-ended semantic creativity and rigid mathematical constraints, we aim to provide a reliable tool that helps artists overcome writer's block, experiment with new styles, and accelerate their creative process without sacrificing technical quality.
 
 ## 2. State of the Art
+
 **Commercial tools.** Web-based generators (e.g. [Easy-Peasy.AI Rhyme Generator](https://easy-peasy.ai/templates/rhyme-generator)) and general chat LLMs (ChatGPT, Claude) produce fluent rhyming verse on any topic. *Pros:* easy to use, creative. *Cons:* closed systems with no published evaluation, no explicit verification of syllables or rhyme, no grounding in a music corpus, and unclear quality for Romanian.
 
 **Academic approaches.**
