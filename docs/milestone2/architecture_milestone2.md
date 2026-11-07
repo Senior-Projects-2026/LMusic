@@ -55,7 +55,7 @@ Re-importing the same file does not create duplicates: each stanza has a fixed i
 
 ### 2.1 What retrieval is for: examples in the prompt (few-shot)
 
-When a user asks for lyrics, the system first finds **2–3 real stanzas with a similar theme and the same form**, then gives them to the model **together with the request** as examples. A small model imitates a form it can see much better than a form described in words. The prompt tells it to use the examples for style and structure, never to copy them.
+For lyric generation, retrieval is the default: the agent requests **2–3 real stanzas with a similar theme and the requested form**, then gives relevant results to the model **together with the request** as examples. A small model can use these examples as guidance for form and style. The prompt tells it never to copy them. Analysis of user-provided text can skip retrieval and call the verification tools directly. If retrieval finds no suitable examples, the agent proceeds without them and reports the limitation.
 
 ### 2.2 Chunking: one stanza per chunk, with metadata
 
@@ -139,14 +139,17 @@ Our primary candidates are:
 **Rationale:** Rather than relying on massive, closed-source models via API (which introduce latency and cost), a locally fine-tuned SLM quantized to 4-bit (via `bitsandbytes`) guarantees data privacy, zero API costs, and the ability to strictly control the generation loop.
 
 ### 3.2 Agent and Tools (ReAct Loop via MCP)
-The selected SLM will act as an orchestrator using a **ReAct (Reason + Act)** paradigm. Instead of predicting the perfect lyric in one shot, the Agent will generate a draft and independently decide to call verification tools.
+The selected SLM will act as an orchestrator using a **ReAct (Reason + Act)** paradigm. It will identify the task and requested constraints, choose relevant tool calls, and revise a draft using their results. The application will enforce the required checks before returning a final answer, rather than relying solely on the model to request verification.
 
 These tools will be exposed systematically via a **Model Context Protocol (MCP) Server**:
-1.  **`syllable_counter(line)`:** A deterministic Python function (using RoLEX or vowel-counting heuristics) that returns the exact syllable count of a generated string.
-2.  **`rhyme_checker(word1, word2)`:** An algorithm verifying phonetic matching at the end of lines based on the user's requested scheme (AABB, ABAB).
-3.  **`retrieve_lyrics(mood, genre)`:** The RAG interface allowing the agent to fetch inspirational context from our Vector DB when it lacks thematic direction.
+1.  **`syllable_counter(line)`:** A Python function using lexical syllabification data, where available and licensed, with a rule-based fallback. It returns the estimated syllable count and flags uncertain words; deterministic execution does not guarantee linguistic accuracy.
+2.  **`rhyme_checker(word1, word2)`:** Assesses phonetic matching between line endings and returns a match result with uncertainty where needed. The application checks the relevant line pairs against the requested scheme (e.g., AABB or ABAB).
+3.  **`sentiment_analyzer(text)`:** Estimates emotional tone and returns labels with associated scores. The agent compares these estimates with the requested mood; they are advisory signals, not proof of emotional correctness.
+4.  **`retrieve_lyrics(query, mood, genre, rhyme_scheme, n_lines)`:** Searches the vector database using a thematic query and optional metadata filters. It returns relevant stanzas with source identifiers, metadata, and retrieval scores. This is the default context step for generation and can be skipped for analysis of supplied text.
 
-**Decision Flow:** If the `syllable_counter` returns a mismatch (e.g., 9 syllables instead of the requested 8), the agent receives this error as context, discards the faulty line, and regenerates it. The agent is strictly constrained to a maximum of 3 refinement iterations to prevent infinite loops.
+**MCP connection.** The application will act as an MCP client connected to a local Python MCP server over `stdio`. The server will expose tools with typed input schemas and structured results. The client will discover the available tools, validate and execute calls selected by the agent, and pass their results back to the model as feedback. Invalid arguments, unavailable resources, and uncertain analyses will be reported explicitly. The model proposes calls; the application executes them.
+
+**Decision flow and stopping conditions.** For generation, the agent retrieves context, writes a draft, and checks line count, syllable targets, rhyme pairs, and emotional fit where requested. For analysis, it applies the relevant checks directly to the supplied text. A mismatch (e.g., 9 syllables instead of 8) becomes feedback for revising the affected lines. The complete candidate is checked again after each revision because changing one line can affect rhyme or emotional fit. The application permits at most **3 refinement iterations**, including any regeneration prompted by the RAG evaluator in Section 2.5, and stops earlier when the requested checks pass. At the limit, it returns the best candidate with unresolved violations and uncertainty clearly identified. Tool failures are reported and never treated as successful verification.
 
 ---
 
