@@ -1,6 +1,6 @@
-# Problem, Data and RAG Design
+# LMusic Architecture Design & Project Plan
 
-*LMusic · Milestone 2*
+*Milestone 2*
 
 ## 1. Problem and data
 
@@ -123,6 +123,76 @@ flowchart LR
 *Why:* it stops irrelevant examples from steering the model and catches answers that miss the request, which reduces hallucination. It is the slowest method (up to two extra checks), so we measure whether the quality gain justifies the time.
 
 **How we compare them.** On the Golden Dataset: whether the retrieved stanzas fit the request (context precision and recall), whether the lyrics respect the requested form, whether they copy any example, and response time.
+
+---
+
+## 3. Agent, Tools, and Model Choices
+
+### 3.1 Model Choices (SLM)
+For the core generative agent, we are targeting Small Language Models (SLMs) in the 3B-4B parameter range. This size is deliberately chosen to balance reasoning capabilities with hardware constraints, allowing us to perform QLoRA fine-tuning on consumer-grade GPUs (e.g., Google Colab, 16GB VRAM) and run fast, local inference for the iterative verify-refine loop.
+
+Our primary candidates are:
+*   **Phi-3-mini (3.8B):** Exceptional reasoning and instruction-following for its size; highly optimized for tool calling (crucial for our MCP setup).
+*   **Llama-3.2-3B:** Meta’s latest lightweight model, offering robust context handling and strong base creativity.
+*   **Qwen2.5-3B:** Included specifically for its superior native multilingual performance, which is a major advantage for processing Romanian lyrics and syntax.
+
+**Rationale:** Rather than relying on massive, closed-source models via API (which introduce latency and cost), a locally fine-tuned SLM quantized to 4-bit (via `bitsandbytes`) guarantees data privacy, zero API costs, and the ability to strictly control the generation loop.
+
+### 3.2 Agent and Tools (ReAct Loop via MCP)
+The selected SLM will act as an orchestrator using a **ReAct (Reason + Act)** paradigm. Instead of predicting the perfect lyric in one shot, the Agent will generate a draft and independently decide to call verification tools.
+
+These tools will be exposed systematically via a **Model Context Protocol (MCP) Server**:
+1.  **`syllable_counter(line)`:** A deterministic Python function (using RoLEX or vowel-counting heuristics) that returns the exact syllable count of a generated string.
+2.  **`rhyme_checker(word1, word2)`:** An algorithm verifying phonetic matching at the end of lines based on the user's requested scheme (AABB, ABAB).
+3.  **`retrieve_lyrics(mood, genre)`:** The RAG interface allowing the agent to fetch inspirational context from our Vector DB when it lacks thematic direction.
+
+**Decision Flow:** If the `syllable_counter` returns a mismatch (e.g., 9 syllables instead of the requested 8), the agent receives this error as context, discards the faulty line, and regenerates it. The agent is strictly constrained to a maximum of 3 refinement iterations to prevent infinite loops.
+
+---
+
+## 4. Golden Dataset & Evaluation Strategy
+
+To rigorously evaluate both our RAG retrieval performance and the SLM's formal constraint adherence, we are constructing a versioned **Golden Dataset (`data/golden_dataset.json`)** comprising **30 to 50 diverse, complex songwriting prompts**.
+
+### 4.1 Dataset Composition & Creation
+The dataset is manually curated by the team to represent real-world artistic constraints and edge cases. Each entry in the JSON structure contains:
+*   **User Prompt:** A realistic, multi-constraint request (e.g., *"Write a melancholic 4-line chorus about autumn in an ABAB rhyme scheme with exactly 8 syllables per line"*).
+*   **Target Constraints:** Explicit metadata fields specifying the expected rhyme scheme, line count, syllable targets, and emotional tone.
+*   **Ground-Truth Reference Context:** Representative source stanzas or metadata expected to be retrieved by the RAG pipeline.
+*   **Expected Tool Invocations:** The anticipated sequence of checks (`syllable_counter` and `rhyme_checker`) and expected corrections during the ReAct loop.
+
+### 4.2 Evaluation Metrics
+We will evaluate our system against this dataset across three core dimensions:
+1.  **Retrieval Evaluation (RAGAS / RAG Triad):** Measuring context precision and context recall to ensure Qdrant retrieves relevant stanzas that match the requested mood and form.
+2.  **Constraint Adherence Score:** Using our automated MCP tools to independently verify whether the final generated lyrics strictly match the requested syllable count and rhyme scheme (aiming to significantly outperform the 0–4% baseline of raw LLMs).
+3.  **Qualitative & Safety Metrics:** Human-in-the-loop evaluation for emotional resonance, singability, and naturalness, alongside automated checks for toxicity and hallucination mitigation.
+
+---
+
+## 5. Project Timeline (Weeks 6–14)
+This timeline represents our commitment from the current architecture design phase to the final progress presentation.
+
+*   **Week 6: Architecture & Evaluation Setup (Current)**
+    *   Finalize and upload Architecture Document (Milestone 2).
+    *   Complete `ingest_data.py` prototype and ChromaDB/Qdrant initialization.
+    *   Publish `golden_dataset.json` (30-50 prompts).
+*   **Week 7-8: Tooling & SLM Baseline**
+    *   Develop and test the MCP Server with deterministic tools (syllables, rhymes).
+    *   Set up the local/Colab training environment (Unsloth, HuggingFace).
+    *   Run baseline evaluations (Zero-shot SLM vs. Golden Dataset).
+*   **Week 9-10: Agent Integration & Fine-Tuning**
+    *   Execute QLoRA fine-tuning on the chosen SLM using lyrical datasets.
+    *   Integrate the RAG retrieval pipeline with the ReAct agent loop.
+    *   Connect the Agent to the MCP server for the Generate-Verify-Refine loop.
+*   **Week 11-12: Full System Evaluation & Pre-Christmas Milestone**
+    *   Run comprehensive tests using RAG Triad (context precision, recall, faithfulness).
+    *   Measure formal constraint adherence (rhyme/syllable accuracy post-refinement).
+    *   Implement toxicity and moderation guardrails.
+    *   *Deliverable:* Pre-Christmas GitHub Progress Review (Milestone 3).
+*   **Week 13-14: Polish & Final Delivery**
+    *   System optimization, bug fixing, and edge-case handling.
+    *   Prepare CLI/UI interface for demonstrations.
+    *   *Deliverable:* Final Progress Presentation (Week 14).
 
 ---
 
