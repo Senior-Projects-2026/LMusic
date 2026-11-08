@@ -173,27 +173,26 @@ We will evaluate our system against this dataset across three core dimensions:
 ---
 
 ## 5. Project Timeline (Weeks 6–14)
-This timeline represents our commitment from the current architecture design phase to the final progress presentation.
+This timeline represents our commitment from the current architecture design phase to the final progress presentation, including all planned experiments.
 
 *   **Week 6: Architecture & Evaluation Setup (Current)**
     *   Finalize and upload Architecture Document (Milestone 2).
     *   Complete `ingest_data.py` prototype and ChromaDB/Qdrant initialization.
-    *   Publish `golden_dataset.json` (30-50 prompts).
+    *   Publish `golden_dataset.json` (50 prompts).
 *   **Week 7-8: Tooling & SLM Baseline**
     *   Develop and test the MCP Server with deterministic tools (syllables, rhymes).
     *   Set up the local/Colab training environment (Unsloth, HuggingFace).
-    *   Run baseline evaluations (Zero-shot SLM vs. Golden Dataset).
+    *   **Experiment 1 (Baseline):** Evaluate Zero-shot SLMs against the Golden Dataset to measure raw constraint adherence before any fine-tuning.
 *   **Week 9-10: Agent Integration & Fine-Tuning**
     *   Execute QLoRA fine-tuning on the chosen SLM using lyrical datasets.
-    *   Integrate the RAG retrieval pipeline with the ReAct agent loop.
-    *   Connect the Agent to the MCP server for the Generate-Verify-Refine loop.
+    *   Integrate the RAG pipeline with the ReAct agent loop.
+    *   **Experiment 2 (RAG Strategies):** Compare Standard RAG, HyDE, and LLM Evaluator (as defined in Sec 2.5), alongside chunking sizes, using RAGAS context metrics.
 *   **Week 11-12: Full System Evaluation & Pre-Christmas Milestone**
-    *   Run comprehensive tests using RAG Triad (context precision, recall, faithfulness).
-    *   Measure formal constraint adherence (rhyme/syllable accuracy post-refinement).
-    *   Implement toxicity and moderation guardrails.
+    *   Connect the fine-tuned Agent to the MCP server for the Generate-Verify-Refine loop.
+    *   **Experiment 3 (Full System Ablation):** Measure final formal constraint adherence (rhyme/syllable accuracy post-refinement) vs. the baseline.
     *   *Deliverable:* Pre-Christmas GitHub Progress Review (Milestone 3).
 *   **Week 13-14: Polish & Final Delivery**
-    *   System optimization, bug fixing, and edge-case handling.
+    *   Implement toxicity guardrails, bug fixing, and edge-case handling.
     *   Prepare CLI/UI interface for demonstrations.
     *   *Deliverable:* Final Progress Presentation (Week 14).
 
