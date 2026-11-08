@@ -155,19 +155,19 @@ These tools will be exposed systematically via a **Model Context Protocol (MCP) 
 
 ## 4. Golden Dataset & Evaluation Strategy
 
-To rigorously evaluate both our RAG retrieval performance and the SLM's formal constraint adherence, we are constructing a versioned **Golden Dataset (`data/golden_dataset.json`)** comprising **30 to 50 diverse, complex songwriting prompts**.
+To rigorously evaluate both our RAG retrieval performance and the SLM's formal constraint adherence, we are constructing a versioned **Golden Dataset (`data/golden_dataset.json`)** comprising **50 diverse, complex songwriting prompts**.
 
 ### 4.1 Dataset Composition & Creation
-The dataset is manually curated by the team to represent real-world artistic constraints and edge cases. Each entry in the JSON structure contains:
-*   **User Prompt:** A realistic, multi-constraint request (e.g., *"Write a melancholic 4-line chorus about autumn in an ABAB rhyme scheme with exactly 8 syllables per line"*).
-*   **Target Constraints:** Explicit metadata fields specifying the expected rhyme scheme, line count, syllable targets, and emotional tone.
-*   **Ground-Truth Reference Context:** Representative source stanzas or metadata expected to be retrieved by the RAG pipeline.
-*   **Expected Tool Invocations:** The anticipated sequence of checks (`syllable_counter` and `rhyme_checker`) and expected corrections during the ReAct loop.
+The dataset is manually curated by the team to represent real-world artistic constraints and edge cases. It contains no generated lyrics or reference answers to avoid copyright issues; any output that satisfies the requested form is considered valid. Each entry in the JSON structure contains:
+*   **User Prompt:** A realistic, natural-language request where constraints appear dynamically (start, middle, or end of the sentence) and often use natural terminology (e.g., "rimă încrucișată" instead of "ABAB").
+*   **Target Constraints:** Explicit metadata fields specifying the `theme` and `expected_constraints` (rhyme scheme, line count, and syllable targets). 
+*   **Broad Coverage:** The dataset explicitly tests rhyme schemes (AABB, ABAB, ABBA, AABBCC, ABABAB, ABABCDCD), stanza lengths (4, 6, and 8 lines), syllable counts (7 to 11), and 46 distinct themes.
+*   **Adversarial / Vague Inputs:** Seven requests (ids 43 to 49) deliberately omit one or more constraints to test how the agent gracefully handles incomplete or vague instructions.
 
 ### 4.2 Evaluation Metrics
 We will evaluate our system against this dataset across three core dimensions:
 1.  **Retrieval Evaluation (RAGAS / RAG Triad):** Measuring context precision and context recall to ensure Qdrant retrieves relevant stanzas that match the requested mood and form.
-2.  **Constraint Adherence Score:** Using our automated MCP tools to independently verify whether the final generated lyrics strictly match the requested syllable count and rhyme scheme (aiming to significantly outperform the 0–4% baseline of raw LLMs).
+2.  **Constraint Adherence Score:** Using our automated MCP tools to independently verify whether the final generated lyrics strictly match the requested syllable count and rhyme scheme. Because syllable counts in Romanian are hard to check automatically with 100% accuracy, a representative sample will also be verified by hand.
 3.  **Qualitative & Safety Metrics:** Human-in-the-loop evaluation for emotional resonance, singability, and naturalness, alongside automated checks for toxicity and hallucination mitigation.
 
 ---

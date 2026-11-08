@@ -1,0 +1,486 @@
+[
+  {
+    "id": 1,
+    "prompt": "4 versuri, rimă încrucișată, 8 silabe: un refren trist despre o dragoste care s-a terminat. Mă ajuți?",
+    "theme": "dragoste tristă",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 2,
+    "prompt": "Fac o piesă pop pentru vară și am nevoie de o strofă, 4 versuri cu rimă AABB și 10 silabe pe vers, despre cum se termină vacanța. Să aibă ritm alert.",
+    "theme": "sfârșit de vară",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 3,
+    "prompt": "Rimă îmbrățișată, 4 versuri, 8 silabe. Tema: ploaia.",
+    "theme": "ploaie",
+    "expected_constraints": {
+      "rhyme_scheme": "ABBA",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 4,
+    "prompt": "Sunt plecat de acasă de 2 ani. Aș vrea un refren de 4 versuri despre dorul de casă, cu rimă încrucișată, și să fie în jur de 10 silabe fiecare vers.",
+    "theme": "dor de casă",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 5,
+    "prompt": "Vreau o strofă din copilărie, cu bicicleta, vara la bunici, genul ăsta. 6 versuri, rimă AABBCC, 8 silabe.",
+    "theme": "copilărie",
+    "expected_constraints": {
+      "rhyme_scheme": "AABBCC",
+      "lines": 6,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 6,
+    "prompt": "Pentru trupa mea am nevoie de un refren cu energie, 4 versuri și 8 silabe, rimă împerecheată, despre libertate.",
+    "theme": "libertate",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 7,
+    "prompt": "Mi-a plecat iubita. Dă-mi te rog o strofă despre despărțire, ABAB, 4 versuri, 11 silabe, să doară puțin.",
+    "theme": "despărțire",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 11
+    }
+  },
+  {
+    "id": 8,
+    "prompt": "Scrie-mi 4 versuri cu rimă îmbrățișată, 10 silabe, ceva despre orașul noaptea, cu luminile și străzile goale. Ton nostalgic.",
+    "theme": "oraș noaptea",
+    "expected_constraints": {
+      "rhyme_scheme": "ABBA",
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 9,
+    "prompt": "Cânt la o petrecere sâmbătă și caut un refren vesel despre iubire. Ritm cât mai alert, 4 versuri, rimă AABB, 8 silabe.",
+    "theme": "dragoste fericită",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 10,
+    "prompt": "Mă ajuți cu o strofă despre toamnă? 8 versuri, 8 silabe la fiecare, făcută din două catrene cu rimă încrucișată.",
+    "theme": "toamnă",
+    "expected_constraints": {
+      "rhyme_scheme": "ABABCDCD",
+      "lines": 8,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 11,
+    "prompt": "Un refren despre prietenie, pentru cel mai bun prieten al meu, 7 silabe pe vers, 4 versuri, ABAB. E cadou.",
+    "theme": "prietenie",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 7
+    }
+  },
+  {
+    "id": 12,
+    "prompt": "Mă simt cam singur în ultima vreme. Poți să-mi scrii despre asta, cu rimă împerecheată, 4 versuri de 10 silabe?",
+    "theme": "singurătate",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 13,
+    "prompt": "Hai cu o strofă despre iarnă, ceva liniștit, cu rimă îmbrățișată, 4 versuri și 8 silabe.",
+    "theme": "iarnă",
+    "expected_constraints": {
+      "rhyme_scheme": "ABBA",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 14,
+    "prompt": "Track de dance, ritm foarte alert. Refren despre o noapte în club: AABB, 8 silabe, 4 versuri.",
+    "theme": "noapte în club",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 15,
+    "prompt": "Cum ai scrie despre cât de repede trece timpul? 6 versuri cu rimă încrucișată, 10 silabe.",
+    "theme": "trecerea timpului",
+    "expected_constraints": {
+      "rhyme_scheme": "ABABAB",
+      "lines": 6,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 16,
+    "prompt": "Caut un refren care să dea speranță cuiva care trece printr-o perioadă grea. ABAB, 4 versuri, 8 silabe.",
+    "theme": "speranță",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 17,
+    "prompt": "Ador marea. Scrie-mi o strofă ABBA de 4 versuri despre ea, cu 11 silabe.",
+    "theme": "mare",
+    "expected_constraints": {
+      "rhyme_scheme": "ABBA",
+      "lines": 4,
+      "syllables_per_line": 11
+    }
+  },
+  {
+    "id": 18,
+    "prompt": "E ziua mamei săptămâna viitoare, 4 versuri, rimă încrucișată, 10 silabe, ceva emoționant pentru ea.",
+    "theme": "mama",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 19,
+    "prompt": "Pentru un rock: refren despre un drum lung făcut cu mașina. Rimă împerecheată, 8 silabe, 4 versuri.",
+    "theme": "drum lung",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 20,
+    "prompt": "Poți să-mi dai despre o dimineață frumoasă 4 versuri, ton luminos, rimă ABAB, 7 silabe?",
+    "theme": "dimineață",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 7
+    }
+  },
+  {
+    "id": 21,
+    "prompt": "Mi-e dor de satul bunicilor. 6 versuri, rimă împerecheată, câte 8 silabe, te rog, despre locul ăla.",
+    "theme": "bunici și sat",
+    "expected_constraints": {
+      "rhyme_scheme": "AABBCC",
+      "lines": 6,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 22,
+    "prompt": "Am un vis pe care nu l-am împlinit. Refren, 4 versuri, rimă îmbrățișată, 10 silabe, despre asta.",
+    "theme": "vis neîmplinit",
+    "expected_constraints": {
+      "rhyme_scheme": "ABBA",
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 23,
+    "prompt": "Strofă despre luna de pe cer, ceva romantic. ABAB, 8 silabe, 4 versuri.",
+    "theme": "lună",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 24,
+    "prompt": "4 versuri, rimă AABB, 10 silabe, ritm alert: un refren pop despre o iubire de vacanță, ca într-o melodie de radio.",
+    "theme": "iubire de vacanță",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 25,
+    "prompt": "Mi-ai putea scrie, cu 11 silabe pe vers, 4 versuri cu rimă încrucișată, despre un tren care pleacă din gară și cineva rămâne pe peron?",
+    "theme": "tren care pleacă",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 11
+    }
+  },
+  {
+    "id": 26,
+    "prompt": "Aș vrea o strofă mai amplă despre regret: 8 versuri, două catrene cu rimă încrucișată, 10 silabe.",
+    "theme": "regret",
+    "expected_constraints": {
+      "rhyme_scheme": "ABABCDCD",
+      "lines": 8,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 27,
+    "prompt": "Ceva amuzant despre cafeaua de dimineață, fără de care nu funcționez, AABB, 8 silabe, un refren de 4 versuri.",
+    "theme": "cafea de dimineață",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 28,
+    "prompt": "Mă întâlnesc cu un prieten după 10 ani. Scrie-mi o strofă despre revedere, 4 versuri, ABBA, 8 silabe.",
+    "theme": "revedere",
+    "expected_constraints": {
+      "rhyme_scheme": "ABBA",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 29,
+    "prompt": "7 silabe pe vers, rimă încrucișată, 4 versuri despre păsări și zbor.",
+    "theme": "zbor",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 7
+    }
+  },
+  {
+    "id": 30,
+    "prompt": "Vreau un refren melancolic, 4 versuri, ABAB, 10 silabe, de toamnă, cu ploaie la geam.",
+    "theme": "ploaie de toamnă",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 31,
+    "prompt": "Poți scrie despre un oraș vechi, 6 versuri, rimă împerecheată, 10 silabe, cu străzi de piatră?",
+    "theme": "oraș vechi",
+    "expected_constraints": {
+      "rhyme_scheme": "AABBCC",
+      "lines": 6,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 32,
+    "prompt": "Refren de dans, să se simtă ritmul, 7 silabe, 4 versuri, AABB, tempo alert.",
+    "theme": "dans",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 7
+    }
+  },
+  {
+    "id": 33,
+    "prompt": "Îmi place cineva care nu mă vede. Poți scrie 4 versuri, rimă îmbrățișată, 11 silabe, despre o iubire neîmpărtășită?",
+    "theme": "iubire neîmpărtășită",
+    "expected_constraints": {
+      "rhyme_scheme": "ABBA",
+      "lines": 4,
+      "syllables_per_line": 11
+    }
+  },
+  {
+    "id": 34,
+    "prompt": "O strofă ABAB, 4 versuri, 8 silabe, optimistă, despre primăvară, când se trezește totul.",
+    "theme": "primăvară",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 35,
+    "prompt": "Tocmai m-am mutat și o iau de la zero. Un refren de 4 versuri despre asta, rimă AABB, 10 silabe.",
+    "theme": "început nou",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 36,
+    "prompt": "Aș vrea, în 8 silabe pe vers și 8 versuri, făcute din două catrene cu rimă încrucișată, o strofă cu amintiri de la țară.",
+    "theme": "amintiri de la țară",
+    "expected_constraints": {
+      "rhyme_scheme": "ABABCDCD",
+      "lines": 8,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 37,
+    "prompt": "Scrie un refren despre telefonul care nu mai sună de când ne-am despărțit. 4 versuri, ABAB, 10 silabe, ton trist.",
+    "theme": "telefon care nu sună",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 38,
+    "prompt": "Hai să facem 4 versuri, rimă AABB, 8 silabe, despre stele și noapte.",
+    "theme": "stele și noapte",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 39,
+    "prompt": "Mă ajuți să scriu despre dor? 6 versuri, rimă încrucișată, 8 silabe.",
+    "theme": "dor",
+    "expected_constraints": {
+      "rhyme_scheme": "ABABAB",
+      "lines": 6,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 40,
+    "prompt": "Track de hip-hop despre cartierul în care am crescut. Flow alert, refren de 4 versuri, rimă împerecheată, 11 silabe.",
+    "theme": "cartier",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB",
+      "lines": 4,
+      "syllables_per_line": 11
+    }
+  },
+  {
+    "id": 41,
+    "prompt": "O seară de iarnă lângă sobă. Strofă de 4 versuri, rimă îmbrățișată, 8 silabe, poți?",
+    "theme": "seară de iarnă",
+    "expected_constraints": {
+      "rhyme_scheme": "ABBA",
+      "lines": 4,
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 42,
+    "prompt": "Mi-a promis că rămâne și a plecat. Un refren despre promisiuni încălcate, ABAB, 7 silabe, 4 versuri.",
+    "theme": "promisiune încălcată",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4,
+      "syllables_per_line": 7
+    }
+  },
+  {
+    "id": 43,
+    "prompt": "Scrie-mi o strofă de dragoste, 4 versuri, rimă ABAB. Cu silabele te las pe tine.",
+    "theme": "dragoste",
+    "expected_constraints": {
+      "rhyme_scheme": "ABAB",
+      "lines": 4
+    }
+  },
+  {
+    "id": 44,
+    "prompt": "8 silabe pe vers: un refren despre vară, restul îți las ție.",
+    "theme": "vară",
+    "expected_constraints": {
+      "syllables_per_line": 8
+    }
+  },
+  {
+    "id": 45,
+    "prompt": "Poți scrie ceva despre ploaie? Să aibă rimă împerecheată, atât.",
+    "theme": "ploaie",
+    "expected_constraints": {
+      "rhyme_scheme": "AABB"
+    }
+  },
+  {
+    "id": 46,
+    "prompt": "Dă-mi 6 versuri despre libertate.",
+    "theme": "libertate",
+    "expected_constraints": {
+      "lines": 6
+    }
+  },
+  {
+    "id": 47,
+    "prompt": "Un refren pop despre prietenie, ceva cu ritm alert.",
+    "theme": "prietenie",
+    "expected_constraints": {}
+  },
+  {
+    "id": 48,
+    "prompt": "scrie ceva despre mare",
+    "theme": "mare",
+    "expected_constraints": {}
+  },
+  {
+    "id": 49,
+    "prompt": "Vreau ceva trist, 4 versuri, 10 silabe, fără rimă anume.",
+    "theme": "tristețe",
+    "expected_constraints": {
+      "lines": 4,
+      "syllables_per_line": 10
+    }
+  },
+  {
+    "id": 50,
+    "prompt": "La apus, pe faleză. Un refren despre o plimbare de-a lungul mării, 4 versuri, ABBA, 7 silabe.",
+    "theme": "plimbare pe faleză",
+    "expected_constraints": {
+      "rhyme_scheme": "ABBA",
+      "lines": 4,
+      "syllables_per_line": 7
+    }
+  }
+]
