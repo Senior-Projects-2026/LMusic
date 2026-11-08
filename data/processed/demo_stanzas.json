@@ -1,0 +1,29 @@
+[
+  {
+    "text": "Pe strada veche se aprind lumini,\nIar pașii mei se pierd printre grădini.",
+    "metadata": {
+      "song_id": "demo-1",
+      "genre": "pop",
+      "stanza_index": 0,
+      "source": "demo_lyrics.txt"
+    }
+  },
+  {
+    "text": "Un tren de seară trece peste pod,\nÎn geamul rece stelele se văd.",
+    "metadata": {
+      "song_id": "demo-1",
+      "genre": "pop",
+      "stanza_index": 1,
+      "source": "demo_lyrics.txt"
+    }
+  },
+  {
+    "text": "Mai stai cu mine până vine ziua,\nSă ascultăm cum cântă iarăși ploaia.",
+    "metadata": {
+      "song_id": "demo-1",
+      "genre": "pop",
+      "stanza_index": 2,
+      "source": "demo_lyrics.txt"
+    }
+  }
+]
