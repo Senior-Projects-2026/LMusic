@@ -64,3 +64,14 @@ a new song without changing the code. The output file is replaced on each run.
 Scope: this is a cleaning/chunking prototype. CSV/JSON input, embeddings, vector
 database insertion, license validation, and deduplication are not implemented
 yet. It does not modify `data/golden_dataset.json`.
+
+## Romanian rhyme checker
+
+The MCP rhyme tool compares Romanian phonetic endings using a locally installed
+RoLEX lexicon. See [setup and limitations](docs/rhyme_checker_design.md).
+
+Run the unit tests (no external lexicon required):
+
+```powershell
+python -m pytest tests/test_rhymes.py -v
+```
