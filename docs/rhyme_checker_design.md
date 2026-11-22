@@ -79,8 +79,8 @@ reporting known, unknown, ambiguous, and alignment-failure counts separately.
 
 - Preserve the existing MCP examples: `tăcuți/pierduți`, `mare/cărare`, and
   `liniștit/oprit`.
-- Check positive pairs (`casă/masă`, `iubire/fericire`) and a negative pair with
-  the same last two letters (`casă/frumoasă`).
+- Check positive pairs (`casă/masă` under noun readings, `iubire/fericire`) and
+  a negative pair with the same last two letters (`mare/fericire`).
 - Check punctuation, capitalization, Unicode variants, blank lines, unknown
   words, ambiguous pronunciations, and invalid line counts.
 - Exercise AABB and ABAB grouping and preserve the dictionary contract.
@@ -127,6 +127,31 @@ Important validation refinement: RoLEX includes both noun and verb readings of
 `casă` and `masă`, with different stressed tails. Without part-of-speech/context
 disambiguation, these words intentionally remain unresolved. Use their noun
 readings as isolated parser fixtures later, not as unambiguous full-lexicon
-positive cases. `casă/frumoasă` is therefore not a reliable negative-only example
-either: the verb reading can have the same tail. This illustrates why last-two-
-letter matching and silent pronunciation selection are inadequate.
+positive cases. The noun reading of `casă` also rhymes with `frumoasă`: their
+tails begin at stressed /a/, after the /o_X/ glide in `frumoasă`. The earlier
+negative example was incorrect. This illustrates why last-two-letter matching
+and silent pronunciation selection are inadequate.
+
+## Stage 3: validation results
+
+`tests/test_rhymes.py` creates temporary, team-authored six-column fixtures.
+It does not copy RoLEX data, download anything, or fall back to a miniature
+dictionary in production. Run its 38 cases independently of the external dataset:
+
+```powershell
+python -m pytest tests/test_rhymes.py -q
+```
+
+Cases cover stressed tails, glides and final nonsyllabic `i`, strict voicing
+distinctions, AABB/ABAB, Unicode normalization, unknown/ambiguous readings,
+inconsistent annotations, duplicate entries, missing/invalid lexicons, and the
+response contract. With the complete local lexicon and compatible MCP 1.x,
+the 5 existing MCP tests also passed (43 cases total).
+
+The official archive indexed to 272,145 normalized word forms: 260,021 had one
+nonempty tail, 1,877 had multiple tails with no failed alignment, and 10,247 had
+at least one unaligned entry (including 125 also having another variant).
+These are lexical resolution counts, not accuracy or corpus coverage scores.
+No baseline lyric outputs are present on this branch, and Golden Dataset prompts
+are instructions rather than generated verses, so end-word coverage on baseline
+outputs remains to be measured after those outputs are available.
