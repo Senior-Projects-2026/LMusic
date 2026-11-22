@@ -1,0 +1,4211 @@
+{
+  "metadata": {
+    "type": "baseline_zero_shot",
+    "models": {
+      "qwen2.5-3b": "unsloth/Qwen2.5-3B-Instruct",
+      "llama-3.2-3b": "unsloth/Llama-3.2-3B-Instruct",
+      "phi-3-mini": "unsloth/Phi-3-mini-4k-instruct"
+    },
+    "load_in_4bit": true,
+    "generation_config": {
+      "max_new_tokens": 300,
+      "do_sample": false
+    },
+    "seed": 42,
+    "n_prompts": 50
+  },
+  "summary": {
+    "qwen2.5-3b": {
+      "total_prompts": 50,
+      "clean_format_pct": 6.0,
+      "line_count_pct": 93.5,
+      "syllable_stanza_exact_pct": 2.2,
+      "syllable_stanza_tol1_pct": 4.4,
+      "syllable_line_exact_pct": 12.9,
+      "syllable_line_tol1_pct": 38.1,
+      "rhyme_stanza_pct": 0.0,
+      "unresolved_rhyme_words_pct": 21.6,
+      "joint_all_constraints_pct": 0.0
+    },
+    "llama-3.2-3b": {
+      "total_prompts": 50,
+      "clean_format_pct": 46.0,
+      "line_count_pct": 97.8,
+      "syllable_stanza_exact_pct": 0.0,
+      "syllable_stanza_tol1_pct": 8.9,
+      "syllable_line_exact_pct": 17.7,
+      "syllable_line_tol1_pct": 41.4,
+      "rhyme_stanza_pct": 0.0,
+      "unresolved_rhyme_words_pct": 18.2,
+      "joint_all_constraints_pct": 2.0
+    },
+    "phi-3-mini": {
+      "total_prompts": 50,
+      "clean_format_pct": 22.0,
+      "line_count_pct": 89.1,
+      "syllable_stanza_exact_pct": 2.2,
+      "syllable_stanza_tol1_pct": 15.6,
+      "syllable_line_exact_pct": 14.7,
+      "syllable_line_tol1_pct": 40.0,
+      "rhyme_stanza_pct": 6.7,
+      "unresolved_rhyme_words_pct": 23.3,
+      "joint_all_constraints_pct": 0.0
+    }
+  },
+  "evaluations": [
+    {
+      "id": 1,
+      "model": "qwen2.5-3b",
+      "theme": "dragoste tristă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Trăsăturile tău rămân,",
+        "În cor la mine se întâlnesc.",
+        "Dragoste ce s-a sfârșit,",
+        "Sunt mereu în mine."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 2,
+      "model": "qwen2.5-3b",
+      "theme": "sfârșit de vară",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Vacanța se sfârște, zilele scurte,",
+        "Într-o lume de frumusețe, împărtășită.",
+        "Pentru cea mai bună vacanță, am plecat,",
+        "Câteva zile mai rămân, iar vacanța,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 3,
+      "model": "qwen2.5-3b",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Ploaie, ploaie, ploaie,",
+        "Numele ta se înfrigă.",
+        "Cu plângere și cu plângere,",
+        "Să ne însoțești întotdeauna."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 4,
+      "model": "qwen2.5-3b",
+      "theme": "dor de casă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Cu toate zâmbetele mele,",
+        "Mă întorc la locul meu,",
+        "De cei care m-au fost prieteni,",
+        "Într-o casa cu frumusețe."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 5,
+      "model": "qwen2.5-3b",
+      "theme": "copilărie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Cu bicicletă în vara,",
+        "Buniciște mă întorc.",
+        "Pădurea se plămâne,",
+        "Flori se țocnesc.",
+        "Câteva zahăr în frumusete,",
+        "Câteva riscoare în joc."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 2,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 3,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 6,
+      "model": "qwen2.5-3b",
+      "theme": "libertate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Libertatea, ea ești frunza,",
+        "Când zâmbetul se întinde în frunte.",
+        "Cu capul liber, cu cor la ciudă,",
+        "Și totul se face frumos și fructe."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 7,
+      "model": "qwen2.5-3b",
+      "theme": "despărțire",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "Despre despărțire,",
+        "Câteva zile mă împart,",
+        "Cu dragă moșen,",
+        "Să ne întâlnim mai târziu."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 8,
+      "model": "qwen2.5-3b",
+      "theme": "oraș noaptea",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Împărtășită de noapte, orașul se închide,",
+        "Luminoasele lucruerii, o scurtă choral.",
+        "Străzile, ca pădurea în târgul negru,",
+        "Său zâmbetul căsătoreților, într-un ron."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 9,
+      "model": "qwen2.5-3b",
+      "theme": "dragoste fericită",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În petrecere sâmbăță,",
+        "Am văzut o prietenoasă.",
+        "Cu dragetul ei se cunoscuse,",
+        "Și se înflorisea toată."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 3,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 10,
+      "model": "qwen2.5-3b",
+      "theme": "toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Toamna, târgurile pline de zahăr,",
+        "Sănătatea, bărbătii și copiilor.",
+        "Pădurea, cu fructe de vară,",
+        "Întotdeauna plină de ploaie și de aur.",
+        "Câteva bărci se întorc în toamnă,",
+        "Cu bărcișuri de măsuri diferite.",
+        "Bărcișul, cu frunze de verde,",
+        "Într-o lume de grăsimă și de șarpe."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 8,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 8,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 11,
+      "model": "qwen2.5-3b",
+      "theme": "prietenie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Amiul meu cel mai bun,",
+        "Cu toate tine bune,",
+        "Îți doresc bine întotdeauna,",
+        "Și te amic cu toții."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 2,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 12,
+      "model": "qwen2.5-3b",
+      "theme": "singurătate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Cu plământul tău, în întunericul noaptea,",
+        "să ne întrebi pe ce teme te gândești?",
+        "Sunt câteva zile când te simți singur,",
+        "într-o lume unde orice este posibil."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 13,
+      "model": "qwen2.5-3b",
+      "theme": "iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Iarnul cu pui dulce,",
+        "Numele se închide în snu.",
+        "Lucei morii plăcea,",
+        "În întuneric, făcând să nu meargă."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 14,
+      "model": "qwen2.5-3b",
+      "theme": "noapte în club",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Noaptea începe în club,",
+        "Luminașa se șterzează,",
+        "Muzica se șocă,",
+        "Noaptea începe în club."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 15,
+      "model": "qwen2.5-3b",
+      "theme": "trecerea timpului",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Până când scuții se șterg,",
+        "Timpul șoarează, șoc și șoc.",
+        "Câteva ore, peste cap,",
+        "Și șocul trecere începe.",
+        "Mare șoc, mica șoc,",
+        "Timpul șoc, șoc și șoc."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 16,
+      "model": "qwen2.5-3b",
+      "theme": "speranță",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Astrăgeți-nu în afacerea zâmbetului,",
+        "Când zâmbetele rămân mereu în spate.",
+        "În timp ce zâmbetele se pierd,",
+        "Păstrați-nu în corul dumneavoastră speranța."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 17,
+      "model": "qwen2.5-3b",
+      "theme": "mare",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "Ador marea, cu frumusețe,",
+        "Câteva zile, și tu vei fi,",
+        "Pentru mine, pentru mine,",
+        "Într-un loc de liniște."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 18,
+      "model": "qwen2.5-3b",
+      "theme": "mama",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Cu dragă zile, cu plină speranță,",
+        "Aș dori să-ți spun ce-ai făcut astăzi.",
+        "Cu câte emoții, cu câte bătuturi,",
+        "În ciuda scurtării, te-am încurajat și apoi."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 19,
+      "model": "qwen2.5-3b",
+      "theme": "drum lung",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": false,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": "Extracted 0 lines for scheme AABB",
+      "joint_pass": false
+    },
+    {
+      "id": 20,
+      "model": "qwen2.5-3b",
+      "theme": "dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Dimineața de aur, cântecul zâmbet,",
+        "Numele tău, lumea, se încrini.",
+        "Luceau lumi, pământul se încurajă,",
+        "În fruntea noastră, neapărător."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 21,
+      "model": "qwen2.5-3b",
+      "theme": "bunici și sat",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Mi-e dor de satul bunicilor,",
+        "Când zahărul de licheafă mi-e dor.",
+        "Să mă întorc la râu și la plămân,",
+        "La șoarele de ploaie și de aur.",
+        "Bucurător, cu capul în frunte,",
+        "Sunt încăperea mea, în satul meu."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 22,
+      "model": "qwen2.5-3b",
+      "theme": "vis neîmplinit",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Încă părăsite, împărtășit cu nebunie,",
+        "Dreptul meu, într-o noapte de neaștiință.",
+        "Să-și înghețească visul, dar nu mai poate,",
+        "Păcălindu-se că nu l-a împlinit."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 23,
+      "model": "qwen2.5-3b",
+      "theme": "lună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Astră pe calea noastră, lună de pe cer,",
+        "Natura într-o scurtă strofă, cu oameni de la cer.",
+        "Cu frunzele târpei și cu zâmbetul lor,",
+        "Luna ne-ți oferă lumină, în noaptea de aur."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 24,
+      "model": "qwen2.5-3b",
+      "theme": "iubire de vacanță",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Vacanța mă adormează,",
+        "Vacanța mă adormează.",
+        "Vacanța mă adormează,",
+        "Vacanța mă adormează."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 4,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 25,
+      "model": "qwen2.5-3b",
+      "theme": "tren care pleacă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "Trenul de la gară se va întoarce,",
+        "Când vântul strigă și plămânul scintillează.",
+        "Pe peron, o femeie se află,",
+        "Cu ochii încrucișați cu cel mai frumos."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 26,
+      "model": "qwen2.5-3b",
+      "theme": "regret",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Regretul meu, în taină,",
+        "Când am pierdut ceva, într-o întâlnire.",
+        "Am sălbatice, cu dragoste,",
+        "Pentru ceva, care nu exista mai mult.",
+        "Numele lui, pe toate pădurile,",
+        "Sunt zvonul de un anumit lucru,",
+        "Când mi se spune,",
+        "Nu mă uită, am pierdut totul."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 8,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 8,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 27,
+      "model": "qwen2.5-3b",
+      "theme": "cafea de dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "AABB, 8 silabe, în mod perfect.",
+        "Pentru mine, cafea este primul lucru,",
+        "Fără ea, neziușul nu funcționează.",
+        "Cafea mea, cu toată tradiția,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 28,
+      "model": "qwen2.5-3b",
+      "theme": "revedere",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Cu plină încetie,",
+        "Vă văduvul știau,",
+        "Până ți-am pierdut.",
+        "Aici, la șoarele noastre,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 29,
+      "model": "qwen2.5-3b",
+      "theme": "zbor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Păsarea sălbatică, în ciobăruțe,",
+        "Zburătorul de ploaie, în plângere.",
+        "Natura împinge, în frunzele,",
+        "Câteva zboruri, în apă."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 30,
+      "model": "qwen2.5-3b",
+      "theme": "ploaie de toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Ploaie la geam, toamnul se întuneca,",
+        "În frunzele mici, zâmbetele se scutec.",
+        "Sfântul nebun, în ciocolată de neagră,",
+        "Într-o lume de plângeri, îmi spune: \"Toamnă!"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 31,
+      "model": "qwen2.5-3b",
+      "theme": "oraș vechi",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Străzi de piatră, în șorele vieții,",
+        "În șorele vieții, străzi de piatră.",
+        "Vântul călca, în șorele vieții,",
+        "În șorele vieții, vântul călca.",
+        "Străzi de piatră, în șorele vieții,",
+        "În șorele vieții, străzi de piatră."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": true,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 6,
+      "syllable_line_tol1_hits": 6,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 32,
+      "model": "qwen2.5-3b",
+      "theme": "dans",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Ritmo rápido,",
+        "Corazón en piezas,",
+        "Música vibrante,",
+        "Pulso latiendo."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 3,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 33,
+      "model": "qwen2.5-3b",
+      "theme": "iubire neîmpărtășită",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": false,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": "Extracted 0 lines for scheme ABBA",
+      "joint_pass": false
+    },
+    {
+      "id": 34,
+      "model": "qwen2.5-3b",
+      "theme": "primăvară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Primăvară, primăvară,",
+        "Natura se trezește întotdeauna.",
+        "În fruntea zâmbetului,",
+        "Când se întoarcă lumea în albastră."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 35,
+      "model": "qwen2.5-3b",
+      "theme": "început nou",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "În locul vacanței, am începe să înveț,",
+        "La zero începând, cu speranță și curaj,",
+        "Cu pasiune și entuziasm, călătoriște până la cap,",
+        "În cadrul noii aventur, la noi orice."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 36,
+      "model": "qwen2.5-3b",
+      "theme": "amintiri de la țară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Catre țara, cu frumoasă plăcuță,",
+        "Să-ți zâmbetă, cu bărbatul și fătul.",
+        "Pământul, cu mărcișuri de șapte,",
+        "Și cu șoarele, cu șoarele.",
+        "Cu șoarele, cu șoarele,",
+        "Să-ți zâmbetă, cu bărbatul și fătul.",
+        "Pământul, cu mărcișuri de șapte,",
+        "Și cu șoarele, cu șoarele."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 8,
+      "rhyme_passed": false,
+      "unresolved_endings": 3,
+      "total_endings": 8,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 37,
+      "model": "qwen2.5-3b",
+      "theme": "telefon care nu sună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Așa mă simt cu fiecare zbor,",
+        "Când telefonul nu mai sună,",
+        "Până la rândul meu s-a pierdut,",
+        "Și nici măcar să-l văd."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 38,
+      "model": "qwen2.5-3b",
+      "theme": "stele și noapte",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Stelele, în noapte întunecată,",
+        "Lumina lor împinge cu plăcere.",
+        "Numele lor, în ciocârlițe,",
+        "Sunt o trăsătare de lumea noastră."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 39,
+      "model": "qwen2.5-3b",
+      "theme": "dor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Dorul, un nebun, căpătă,",
+        "În cor la femei, în soare.",
+        "Când se întâlnesc, el scurt,",
+        "Spre lumea încearcă să scurt.",
+        "Dorul, un zvon, răzgătit,",
+        "În cor la bărbați, în neapărat."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 3,
+      "syllable_line_tol1_hits": 6,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 40,
+      "model": "qwen2.5-3b",
+      "theme": "cartier",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "Yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo",
+        "Yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo",
+        "Yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo",
+        "Yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 4,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 41,
+      "model": "qwen2.5-3b",
+      "theme": "seară de iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "O seară de iarnă deasupra sobei,",
+        "Pădurea întunecată în tămârul său.",
+        "Sobăa plină cu fructe roșii și negre,",
+        "În stânceri de neagră, păcălui."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 42,
+      "model": "qwen2.5-3b",
+      "theme": "promisiune încălcată",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Promisiuni încălțate, rămâne și a plecat,",
+        "Câteva zile, ceea ce se întâlnise, a plecat.",
+        "Fără să-și încearcă să-și spune,",
+        "Pentru a-și păstra cea mai bună parte."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 43,
+      "model": "qwen2.5-3b",
+      "theme": "dragoste",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4
+      },
+      "extracted_lines": [
+        "Cu toate zilele, cu toate noapte,",
+        "Când crești și câștigeți vânt,",
+        "Cu toate luni, cu toate joi,",
+        "Dragostea ta se înrăutășește."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 44,
+      "model": "qwen2.5-3b",
+      "theme": "vară",
+      "expected_constraints": {
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Vară vine cu fructe pline.",
+        "Vară (5)",
+        "Vinea (3)",
+        "Răfrumurul este în limba română și reflectă ideea că vară vine cu fructe pline, ceea ce sugerează sănătate și plăcere."
+      ],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 45,
+      "model": "qwen2.5-3b",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB"
+      },
+      "extracted_lines": [
+        "Ploaie, ploaie, zâmbeturi plăcui,",
+        "Numele tău, ploaie, în liniște se scuza."
+      ],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": "Extracted 2 lines for scheme AABB",
+      "joint_pass": false
+    },
+    {
+      "id": 46,
+      "model": "qwen2.5-3b",
+      "theme": "libertate",
+      "expected_constraints": {
+        "lines": 6
+      },
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": false,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 47,
+      "model": "qwen2.5-3b",
+      "theme": "prietenie",
+      "expected_constraints": {},
+      "extracted_lines": [
+        "Prietenie, prietenie,",
+        "Cu toate zilele, într-o echipă,",
+        "Cu toate zilele, într-o echipă,",
+        "Prietenie, prietenie,"
+      ],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 48,
+      "model": "qwen2.5-3b",
+      "theme": "mare",
+      "expected_constraints": {},
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 49,
+      "model": "qwen2.5-3b",
+      "theme": "tristețe",
+      "expected_constraints": {
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Întâlnire cu Luna,",
+        "să înceapă noapte frumoasă,",
+        "nemultă, într-o școală zahărului,",
+        "în somnul tău de copil."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 50,
+      "model": "qwen2.5-3b",
+      "theme": "plimbare pe faleză",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "La apus, pe mării plin,",
+        "Câteva zile, ceea ce vrem,",
+        "Cu frunze de luna în mânuie,",
+        "Să ne întâlnim la apus."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 1,
+      "model": "llama-3.2-3b",
+      "theme": "dragoste tristă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Luna plină, o noapte frigă",
+        "S-a despărțit de mine, fără să mă gândi",
+        "Căldura noastră, o flacără",
+        "Care a dispărut, fără să mai stea"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 2,
+      "model": "llama-3.2-3b",
+      "theme": "sfârșit de vară",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "În vară, am visat să merg,",
+        "Pentru plăcere, fără griji și frică.",
+        "Cu prietenii, am dansat și cântat,",
+        "Într-un lângă-lângă, fără vreo ură."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 3,
+      "model": "llama-3.2-3b",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Ploaia cadă pe pământ,",
+        "Umplând liniștea noaptea,",
+        "Nimbozii se străjuiesc,",
+        "Ploaia îmbrăcă pământul."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 4,
+      "model": "llama-3.2-3b",
+      "theme": "dor de casă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Într-un război de sentimente,",
+        "Dorul meu de casă este un foc,",
+        "Într-un luptă cu tristețea,",
+        "Sunt într-o luptă cu frigul."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 5,
+      "model": "llama-3.2-3b",
+      "theme": "copilărie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În vară, când soarele strălucește,",
+        "Bicicleta mea era mea, o pasăre.",
+        "La bunici, unde mă bucur și mă joc,",
+        "În grădină, unde florile zăcuseră.",
+        "Cu bicicleta, mă simt liber și frânt,",
+        "În vară, când viața este plină de sunet."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 6,
+      "model": "llama-3.2-3b",
+      "theme": "libertate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": false,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": "Extracted 0 lines for scheme AABB",
+      "joint_pass": false
+    },
+    {
+      "id": 7,
+      "model": "llama-3.2-3b",
+      "theme": "despărțire",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "În umbra ta, rămâi",
+        "Căldura ta, o gândesc",
+        "Despărțirea, o durere",
+        "În inimă, o rămâne"
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 8,
+      "model": "llama-3.2-3b",
+      "theme": "oraș noaptea",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Noaptea orașului, străzile goale,",
+        "Luminile strălucesc, cu o melodie,",
+        "Ploaia cadă, cu un zâmbet deosebit,",
+        "În noaptea orașului, am gânduri de altădată."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 9,
+      "model": "llama-3.2-3b",
+      "theme": "dragoste fericită",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În sâmbătă se petrece, o noapte de dragoste,",
+        "Cu iubirea în inimă, totul este bine.",
+        "În brațele mele, găsește-ți refugiu,",
+        "În iubirea noastră, totul este bine."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 10,
+      "model": "llama-3.2-3b",
+      "theme": "toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În toamnă, soarele scade,",
+        "Lumină, cald, și frumos,",
+        "Pădurea se umplă cu mări,",
+        "Căprioarele se ascund.",
+        "Frumos, cald, și plin de mări,",
+        "Toamna se umple de mări,",
+        "Căprioarele se ascund,",
+        "Pădurea se umplă cu mări."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 5,
+      "syllable_line_tol1_hits": 8,
+      "syllable_line_total": 8,
+      "rhyme_passed": false,
+      "unresolved_endings": 4,
+      "total_endings": 8,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 11,
+      "model": "llama-3.2-3b",
+      "theme": "prietenie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "În lumea plină de străini,",
+        "Cu tine, eu am găsit un loc,",
+        "Un prieten de inimă, un prieten de inimă,",
+        "Unde dragostea ne va face loc."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 12,
+      "model": "llama-3.2-3b",
+      "theme": "singurătate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Într-un lângă lângă, singurul meu drum,",
+        "Sunt împreună cu gândurile mele,",
+        "Într-un mediu vast, cu străzile lungi,",
+        "Sunt singur, fără voce, fără sunet."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 13,
+      "model": "llama-3.2-3b",
+      "theme": "iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Iarnă se spune cu voce susurată,",
+        "Când zăpada coboară pe străzi,",
+        "Cântecele de iarnă ne aducă,",
+        "Liniștea și dragoste, în noapte."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 14,
+      "model": "llama-3.2-3b",
+      "theme": "noapte în club",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În noaptea de club, sunetul strâns",
+        "A se desfășoară, ritmul ne-împiedică",
+        "În jurul meu, oameni care dansă",
+        "În armonie, cu pasul ne-împiedică"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 15,
+      "model": "llama-3.2-3b",
+      "theme": "trecerea timpului",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Într-o secundă, trecutul se desface,",
+        "Într-o secundă, viitorul se deschide,",
+        "Într-o secundă, timpul se scurte,",
+        "Într-o secundă, amintiri se pierd,",
+        "Într-o secundă, viitorul se străduiește,",
+        "Într-o secundă, trecutul se închide."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 2,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 16,
+      "model": "llama-3.2-3b",
+      "theme": "speranță",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În umbra tenebrosului zori,",
+        "Speranța îți va deschide drumul.",
+        "Într-un lume plină de suferință,",
+        "Treci, dar nu te pierzi, dragul meu."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 17,
+      "model": "llama-3.2-3b",
+      "theme": "mare",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "Ador marea, ador libertatea,",
+        "În marea, găsesc pacea mea,",
+        "Libertatea mă face să zâmbe,",
+        "În marea, eu sunt liberă."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 18,
+      "model": "llama-3.2-3b",
+      "theme": "mama",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Ea va fi o zi specială,",
+        "Cu amintiri de dragoste și de vis,",
+        "Un moment de frumusețe,",
+        "Care va rămâne în sufletul ei."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 19,
+      "model": "llama-3.2-3b",
+      "theme": "drum lung",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Drumul lung, drumul dur,",
+        "Mașina mă duce departe,",
+        "Peste străzi, peste drumuri,",
+        "În căutarea drumului."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 20,
+      "model": "llama-3.2-3b",
+      "theme": "dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "În dimineață, soarele strălucește,",
+        "Aerul este cald, plin de viață,",
+        "Păsările cântă cu voce dulce,",
+        "Un nou zbor, un nou început de viață."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 21,
+      "model": "llama-3.2-3b",
+      "theme": "bunici și sat",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În satul bunicilor, unde trăiau cu drag,",
+        "În jurul casei, un frumos parc străjuiau.",
+        "Pădurea era plină de copaci înalti,",
+        "Cărămizile erau bine gătite, mămăligă era.",
+        "Bunicii erau bine îngrijiți, cu grijă,",
+        "Făcuseau mâncare, pentru toți, cu dragă."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 3,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 22,
+      "model": "llama-3.2-3b",
+      "theme": "vis neîmplinit",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Visul meu, un vis de mâine,",
+        "În care tot ce este, este perfect.",
+        "Sper să îl împlinesc, în curând,",
+        "Și să trăiesc, fără nici un răgaz."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 23,
+      "model": "llama-3.2-3b",
+      "theme": "lună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Luna, o femeie de stele,",
+        "În cerul noaptea, ei se întâlnesc,",
+        "Cu o frumusețe care ne face să trecem",
+        "Într-un vis, într-o lume de vis."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 24,
+      "model": "llama-3.2-3b",
+      "theme": "iubire de vacanță",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "În vacanță, cu tine",
+        "Sunt liber, fără griji",
+        "Suntem doi, într-un loc",
+        "Împreună, cu așteptarea"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 25,
+      "model": "llama-3.2-3b",
+      "theme": "tren care pleacă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "În gară, trenul pleacă cu viteză,",
+        "Lăsând în urmă, cu tristețe,",
+        "O persoană, care rămâne,",
+        "În umbra, cu gânduri grele."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 26,
+      "model": "llama-3.2-3b",
+      "theme": "regret",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Regretul este o emoție dură,",
+        "care ne pune în fruntea timpului,",
+        "o amintire care ne răpe,",
+        "din viața noastră, fără să putem",
+        "s-o revină, s-o împărtășim,",
+        "dar într-adevăr, el ne rămâne,",
+        "o amintire care ne răpe.",
+        "Într-un trecut, am făcut erori,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 4,
+      "syllable_line_tol1_hits": 7,
+      "syllable_line_total": 8,
+      "rhyme_passed": false,
+      "unresolved_endings": 3,
+      "total_endings": 8,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 27,
+      "model": "llama-3.2-3b",
+      "theme": "cafea de dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Cafeaua, o prietenă a mea,",
+        "Fără ea, eu nu pot face nimic.",
+        "A mă trezește, a mă încântă,",
+        "A mă face să mă simt viu și frumos."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 28,
+      "model": "llama-3.2-3b",
+      "theme": "revedere",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În zilele trecute, am uitat",
+        "Timpul a fugit, am crescut",
+        "Prieteniile noastre, strălucite",
+        "În amintiri, am răsărit"
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 2,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 29,
+      "model": "llama-3.2-3b",
+      "theme": "zbor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "În pădurea verde, unde soarele strălucește,",
+        "păsările zbură, cu aripile lor frumoase.",
+        "Ei zbură în sus, cu vântul la spate,",
+        "și se pierd în cer, cu frumusețea lor."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 30,
+      "model": "llama-3.2-3b",
+      "theme": "ploaie de toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Toamna se sparge, plină de tristețe,",
+        "Ploaia cade, geamul se umplă cu vânt.",
+        "Cântecele se stinge, liniștea este,",
+        "În umbra noaptea, gândurile merg."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 31,
+      "model": "llama-3.2-3b",
+      "theme": "oraș vechi",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "În orașul vechi, străzile de piatră,",
+        "Călătorii se mișcă cu pasul larg,",
+        "Povestea istoriei se ascunde în ziduri,",
+        "Căldură și frumusețe, o adevărată bani,",
+        "În fiecare turn, o istorie așteptată,",
+        "Orașul vechi, un mister așteptat."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 32,
+      "model": "llama-3.2-3b",
+      "theme": "dans",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Refren de dans, să se simtă ritmul,",
+        "Închiză-ți ochii, să te simți liber.",
+        "Într-un luptă, să te simți în vârstă,",
+        "Într-un pas, să te simți în libertate."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 33,
+      "model": "llama-3.2-3b",
+      "theme": "iubire neîmpărtășită",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "Îmi place cineva care nu mă vede,",
+        "Îmi place să îmi imaginez viitorul,",
+        "Îmi place să îmi imaginez tine,",
+        "Îmi place să îmi imaginez neîmpărtășire."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 34,
+      "model": "llama-3.2-3b",
+      "theme": "primăvară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Primăvara se trezește,",
+        "Avea zăvorât, acum este frumos,",
+        "Sărbători de iarnă, acum este,",
+        "Cântece de primăvară, totul este."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 35,
+      "model": "llama-3.2-3b",
+      "theme": "început nou",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Închiză toate porțile,",
+        "Închiză toate ușile,",
+        "Închiză toate porțile,",
+        "Închiză toate ușile,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 36,
+      "model": "llama-3.2-3b",
+      "theme": "amintiri de la țară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În țara mea, unde soarele arde",
+        "Cu flori de trandafiri, frumoase și bune",
+        "În păduri verzi, unde vânzătorii",
+        "Cu mătănii și cu smântână, vindecări",
+        "În orașe strălucite, unde se străjuiește",
+        "Cu străzile pline de viață, de frumos și de bine",
+        "În casele noastre, unde se găzduiește",
+        "Cu familii și prietenii, dragoste și bucurie"
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 8,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 8,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 37,
+      "model": "llama-3.2-3b",
+      "theme": "telefon care nu sună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Telefonul meu, în silență stă",
+        "Când ne-am despărțit, nu mai sună",
+        "Căutând răspuns, dar nici un sunet",
+        "Și întristarea, în mine se răsune"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 38,
+      "model": "llama-3.2-3b",
+      "theme": "stele și noapte",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În noapte, stelele strălucesc,",
+        "Aurorii lor, pe cerul scânteie.",
+        "Noaptea, ocazii de gândire,",
+        "Stelele, un mister, ne așteaptă."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 39,
+      "model": "llama-3.2-3b",
+      "theme": "dor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Îmi place să te ajut!",
+        "Dorul meu este un flacăr",
+        "Care arde în inimă",
+        "Căutând răspunsuri",
+        "În lumea care mă înconjoară",
+        "Dar nu găsesc niciodată"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 3,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 40,
+      "model": "llama-3.2-3b",
+      "theme": "cartier",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "Îmi amintesc de cartierul meu, un loc de dragoste,",
+        "unde am crescut, într-un mediu plin de viață.",
+        "A fost un loc de aventuri, de descoperiri,",
+        "unde am învățat să trăiesc, să iubeșc și să sufer."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 41,
+      "model": "llama-3.2-3b",
+      "theme": "seară de iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "O seară de iarnă, lângă sobă,",
+        "Cântecele de iarnă, îmi vine să zâmă,",
+        "Focul arde, îmi dă frânghie,",
+        "În noaptea de iarnă, eu mă simt bine."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 42,
+      "model": "llama-3.2-3b",
+      "theme": "promisiune încălcată",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Promisiunea pierdută",
+        "Într-un râs, promisiunea",
+        "Într-un râs, promisiunea",
+        "Pierdută, fără să aibă"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 3,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 43,
+      "model": "llama-3.2-3b",
+      "theme": "dragoste",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4
+      },
+      "extracted_lines": [
+        "În noapte, când steau stele,",
+        "Tine mâinile, frumoasă și caldă,",
+        "Îmi dădă un gând, un vis, un soar,",
+        "În tine, dragostea mea se râde."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 44,
+      "model": "llama-3.2-3b",
+      "theme": "vară",
+      "expected_constraints": {
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În vară, soarele arde,",
+        "Pământul se încălzește,",
+        "Plantele floresc,",
+        "Ieșim din casă,"
+      ],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 2,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 45,
+      "model": "llama-3.2-3b",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB"
+      },
+      "extracted_lines": [
+        "Ploaia, o plină de mireasă,",
+        "Închide lumea, cu un zâmbet amăgâtă.",
+        "Ea vine, ca un vis, cu un sunet de scânci,",
+        "Și îi umple, oamenilor, gândul și tristețea."
+      ],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 46,
+      "model": "llama-3.2-3b",
+      "theme": "libertate",
+      "expected_constraints": {
+        "lines": 6
+      },
+      "extracted_lines": [
+        "În libertate, sufletul se desfășoară",
+        "Fără limite, el se poate răsări",
+        "În libertate, inimă se deschide",
+        "Pentru tot ceea ce este posibil",
+        "În libertate, minte se desface",
+        "Fără frică, ea se poate exprima"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": true
+    },
+    {
+      "id": 47,
+      "model": "llama-3.2-3b",
+      "theme": "prietenie",
+      "expected_constraints": {},
+      "extracted_lines": [
+        "Cu tine, totul este posibil",
+        "Închizăm ochii, ne uităm la tine",
+        "În momentul în care ne simțim",
+        "Să ne încredem, să ne încredem în tine"
+      ],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 48,
+      "model": "llama-3.2-3b",
+      "theme": "mare",
+      "expected_constraints": {},
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 49,
+      "model": "llama-3.2-3b",
+      "theme": "tristețe",
+      "expected_constraints": {
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Sunt singur în noaptea",
+        "Fără nimeni să-mi spună",
+        "Cărora îi am nevoie",
+        "În această lume friguroasă"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 50,
+      "model": "llama-3.2-3b",
+      "theme": "plimbare pe faleză",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Într-un cadru de frumusețe,",
+        "Mării, plin de mări,",
+        "Peste apă, pe faleza,",
+        "Pământul, plin de mări."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 1,
+      "model": "phi-3-mini",
+      "theme": "dragoste tristă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Într-o zi de iul,",
+        "Dragostea mea a terminat,",
+        "Sunt trist, încrucișată,",
+        "Sunt trist, încrucișată,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 2,
+      "model": "phi-3-mini",
+      "theme": "sfârșit de vară",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "În prima zi, vreau să mănunțesc într-o călătorie,",
+        "Călătorie care își desenează mea vacanță.",
+        "Într-o călătorie, vreau să mănunțesc într-o călătorie.",
+        "Într-o călătorie, vreau să mănunțesc într-o călătorie,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 3,
+      "model": "phi-3-mini",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Ploaia, vrem să ne văd,",
+        "Să-mi spun, vrem să ne vad.",
+        "Ploaia, vrem să ne vad,",
+        "Să-mi spun, vrem să ne vad."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 4,
+      "model": "phi-3-mini",
+      "theme": "dor de casă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Casa cu o lume mai mare,",
+        "Către noi, cât și noi,",
+        "Într-o lume de mister,",
+        "Către noi, cât și noi."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 5,
+      "model": "phi-3-mini",
+      "theme": "copilărie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Într-o zi de vremea,",
+        "Călătorii cu bicicleta,",
+        "Pe stradă, pe văgăna,",
+        "Când vreau să-ți spui,",
+        "Că genul ăsta este frumos."
+      ],
+      "clean_format": false,
+      "line_count_passed": false,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 5,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": "Extracted 5 lines for scheme AABBCC",
+      "joint_pass": false
+    },
+    {
+      "id": 6,
+      "model": "phi-3-mini",
+      "theme": "libertate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Suntem vitezii în căutarea liberă,",
+        "Într-o lume ce ne-a întâmplat,",
+        "Într-o zi, într-o zi,",
+        "Într-o zi, într-o zi,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 7,
+      "model": "phi-3-mini",
+      "theme": "despărțire",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "O noapte frumoasă,",
+        "Vântul iubitele,",
+        "Să-mi spun, vreo,",
+        "Într-o sfârșit,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 8,
+      "model": "phi-3-mini",
+      "theme": "oraș noaptea",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Noaptea în oraș, luceafărul mărturizând,",
+        "Luminile străzile, încă vreo frumos,",
+        "Către noi, într-o zi de nostru,",
+        "Într-o zi de nostru, într-o zi de nostru."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 9,
+      "model": "phi-3-mini",
+      "theme": "dragoste fericită",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Suntem câine, într-adevăr,",
+        "Într-o pădure, într-o văzduină,",
+        "Cântec de iubire, vreau să mănânc,",
+        "Să ne spunem, cu vremuri, să ne mâncăm."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 10,
+      "model": "phi-3-mini",
+      "theme": "toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În toamnă, vreau să mă întări,",
+        "Că ciocnă, vreau să mă întări,",
+        "Că vremea, vreau să mă întări,",
+        "Că vremea, vreau să mă întări.",
+        "În toamnă, vreau să mă întări,",
+        "Că vremea, vreau să mă întări,",
+        "Că vremea, vreau să mă întări,",
+        "Că vremea, vreau să mă întări."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": true,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 8,
+      "syllable_line_tol1_hits": 8,
+      "syllable_line_total": 8,
+      "rhyme_passed": false,
+      "unresolved_endings": 8,
+      "total_endings": 8,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 11,
+      "model": "phi-3-mini",
+      "theme": "prietenie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Povestea prietenului meu,",
+        "Către tine, prietenul meu,",
+        "Către tine, prietenul meu,",
+        "Către tine, prietenul meu."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 4,
+      "rhyme_passed": true,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 12,
+      "model": "phi-3-mini",
+      "theme": "singurătate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "În acele timp, mă simt singur și încetător, într-adevăr."
+      ],
+      "clean_format": false,
+      "line_count_passed": false,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 1,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": "Extracted 1 lines for scheme AABB",
+      "joint_pass": false
+    },
+    {
+      "id": 13,
+      "model": "phi-3-mini",
+      "theme": "iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În iarnă, vrem să ne încălcăm,",
+        "Căruța se înlănsește,",
+        "Vandul se află pe picioare,",
+        "Săptămânje se încălcește."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 14,
+      "model": "phi-3-mini",
+      "theme": "noapte în club",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": false,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": "Extracted 0 lines for scheme AABB",
+      "joint_pass": false
+    },
+    {
+      "id": 15,
+      "model": "phi-3-mini",
+      "theme": "trecerea timpului",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Când într-adevăr timp, vreau să mănânc pâinele încrucișată.",
+        "Peste peste peste timp, vreau să mănânc pâinele încrucișată.",
+        "Într-adevăr timp, vreau să mănânc pâinele încrucișată.",
+        "Peste peste peste timp, vreau să mănânc pâinele încrucișată.",
+        "Într-adevăr timp, vreau să mănânc pâinele încrucișată.",
+        "Peste peste peste timp, vreau să mănânc pâinele încrucișată."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 6,
+      "rhyme_passed": true,
+      "unresolved_endings": 0,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 16,
+      "model": "phi-3-mini",
+      "theme": "speranță",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Într-o perioadă de timp,",
+        "Speranță se trăiește,",
+        "Într-o zadă de muncă,",
+        "Speranță se vărite."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 17,
+      "model": "phi-3-mini",
+      "theme": "mare",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "În marea, vestele sunt de fiecare,",
+        "Să-ți vedea, cât ea se înlănsește.",
+        "Să-ți spui, cât ea se înlănsește,",
+        "Să-ți spui, cât ea se înlănsește."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 3,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 18,
+      "model": "phi-3-mini",
+      "theme": "mama",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Săptămânje încrucișată,",
+        "Silabe într-adevăr,",
+        "Emoție într-o vremuri,",
+        "Poetul într-o zadă."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 19,
+      "model": "phi-3-mini",
+      "theme": "drum lung",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Pentru un drum lung,",
+        "Mașina de făcut,",
+        "Silabe 8, versuri 4,",
+        "Căutați drum, lucrează."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 20,
+      "model": "phi-3-mini",
+      "theme": "dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Într-o dimineață frumoasă, lumina se plânge pe picioarele,",
+        "Să-ți vedea cu ochii, o spațiu deplin și plin de lumiere.",
+        "Vându-te în căile de flori, în cărăcuitoarele de pasăre,",
+        "Către o veste de verde, într-o loc deplin și plin de lumiere."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 21,
+      "model": "phi-3-mini",
+      "theme": "bunici și sat",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În lumea de satul bunicilor,",
+        "Că trebuie să înțelegem",
+        "Locul ălea,",
+        "Că am vând un pictură,",
+        "Că am vând un pictură,",
+        "Că am vând un pictură."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 22,
+      "model": "phi-3-mini",
+      "theme": "vis neîmplinit",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": false,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": "Extracted 0 lines for scheme ABBA",
+      "joint_pass": false
+    },
+    {
+      "id": 23,
+      "model": "phi-3-mini",
+      "theme": "lună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În luna de pe cer, lumina se înlănză,",
+        "Scurte vestele, vestele de vânt.",
+        "Sunetul, vestele de vânt,",
+        "Scurte vestele, vestele de vânt."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 24,
+      "model": "phi-3-mini",
+      "theme": "iubire de vacanță",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Sunii lumii, vându-te în vreo spațiu,",
+        "Către marele, într-o loc de asta,",
+        "Să-ți spui, cu drag, cât mai bine.",
+        "Într-o lume de plin de lumina,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 25,
+      "model": "phi-3-mini",
+      "theme": "tren care pleacă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "Într-o zi de fericire,",
+        "Trenul de pe gară a trecut,",
+        "Către un tren, într-o zi de fericire,",
+        "Către un tren, într-o zi de fericire,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 26,
+      "model": "phi-3-mini",
+      "theme": "regret",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Într-adevăr, vreau să spun,",
+        "Că regretul meu este un nume,",
+        "Că mă uita de cea cea cea mai bun,",
+        "Că mă uita de cea cea mai bun.",
+        "Într-o lume mai mare,",
+        "Că mă uita de cea cea mai bun,",
+        "Că mă uita de cea cea mai bun,",
+        "Că mă uita de cea cea mai bun."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 2,
+      "syllable_line_tol1_hits": 6,
+      "syllable_line_total": 8,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 8,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 27,
+      "model": "phi-3-mini",
+      "theme": "cafea de dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În ceasul dimineaței,",
+        "Cafenea de pe stradă,",
+        "Sănătate și amândre,",
+        "Nu-i decizion să aibă."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 28,
+      "model": "phi-3-mini",
+      "theme": "revedere",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Într-o zi de vreme,",
+        "Prietenul meu, vă mă întâlnesc.",
+        "Că timpul a trecut,",
+        "Într-o zi de vreme,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 29,
+      "model": "phi-3-mini",
+      "theme": "zbor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Încrucișată, încrucișată,",
+        "Păsări în perechi, în perechi,",
+        "Zborul într-o pădure,",
+        "Păsări încrucișate, încrucișate."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 30,
+      "model": "phi-3-mini",
+      "theme": "ploaie de toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Într-o zadă de toamnă,",
+        "Ploaie se încălcă,",
+        "Să-ți văd pe pereche,",
+        "Că trebuie să vă măsura."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 31,
+      "model": "phi-3-mini",
+      "theme": "oraș vechi",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Un oraș vechi, într-adevăr, a fost un loc de viață și lucrări,",
+        "Către piatră, într-adevăr, oamenii a fost într-adevăr părăslește.",
+        "În acea oraș, lucrătorii și domnitori, își spun,",
+        "În acea oraș, lucrătorii și domnitori, își spun,",
+        "Către piatră, într-adevăr, oamenii a fost într-adevăr părăslește,",
+        "În acea oraș, lucrătorii și domnitori, își spun, să-ți spun"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 6,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 32,
+      "model": "phi-3-mini",
+      "theme": "dans",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Să-ți simtă într-o simțăție de adevărat,",
+        "Că ciocnă de drag, într-o zid de pietre,",
+        "Că ciocnă de drag, într-o zid de pietre,",
+        "Să-ți simtă într-o simțăție de adevărat."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 33,
+      "model": "phi-3-mini",
+      "theme": "iubire neîmpărtășită",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "Într-o zi de vreme, vreau să mă întreabăc pe măsurile,",
+        "Când vreau să mă vadă,",
+        "Când vreau să mă vadă,",
+        "Când vreau să mă vadă,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 34,
+      "model": "phi-3-mini",
+      "theme": "primăvară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În primăvara, vreau să mănunțesc într-o zadare de vreme,",
+        "Când flori încetinți, și plângi-mă în veste.",
+        "Visez să-ți vadă, într-o zadare de vreme,",
+        "Când vremea începe să se întăsească."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 35,
+      "model": "phi-3-mini",
+      "theme": "început nou",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Într-o zi de vreme,",
+        "Către măsura,",
+        "Către măsura,",
+        "Sunt într-o zadare."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 3,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 36,
+      "model": "phi-3-mini",
+      "theme": "amintiri de la țară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "În lumea de dragostea,",
+        "Cățile sunt încrucișate,",
+        "Către lumea de dragostea,",
+        "Către lumea de dragostea,",
+        "Către lumea de dragostea,",
+        "Către lumea de dragostea,",
+        "Către lumea de dragostea,",
+        "Către lumea de dragostea."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 6,
+      "syllable_line_tol1_hits": 8,
+      "syllable_line_total": 8,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 8,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 37,
+      "model": "phi-3-mini",
+      "theme": "telefon care nu sună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Într-o zi de mai jos,",
+        "Către tine, am vând,",
+        "Către tine, am vând,",
+        "Către tine, am vând,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 38,
+      "model": "phi-3-mini",
+      "theme": "stele și noapte",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Într-adevăr, stelele sunt o spațiu deplină,",
+        "Să-ți vedea, cât se întărește,",
+        "Cu luminile creștit și cu lumina noapte,",
+        "Într-adevăr, stelele sunt o spațiu deplină."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 39,
+      "model": "phi-3-mini",
+      "theme": "dor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Dorul meu, într-adevăr, este un lucru încrucișat,",
+        "Silabele mele, încetări, sunt un nume încrucișat.",
+        "Într-adevăr, dorul meu, este un nume încrucișat,",
+        "Silabele mele, încetări, sunt un lucru încrucișat.",
+        "Încetările mele, dorul meu, sunt un nume încrucișat,",
+        "Lucru meu, dorul meu, este un nume încrucișat."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 6,
+      "rhyme_passed": true,
+      "unresolved_endings": 0,
+      "total_endings": 6,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 40,
+      "model": "phi-3-mini",
+      "theme": "cartier",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "extracted_lines": [
+        "În lumea mea, într-adevăr,",
+        "Către cartierul, un nume de mare.",
+        "Către lui, un refren de 4 versuri,",
+        "Către me, un nume de mare."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 41,
+      "model": "phi-3-mini",
+      "theme": "seară de iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Într-o zi de iarnă, vreau să mă întreabăc pe coltivarea și lucrurile.",
+        "Când seara de iarnă începe,",
+        "Să-mi spun că lucrurile sunt în picioare.",
+        "Coltivați către fructe și legume,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 1,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 42,
+      "model": "phi-3-mini",
+      "theme": "promisiune încălcată",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Într-o zi de iutate,",
+        "Mi-a promis, vreun copil,",
+        "Că rămâne și a plecat,",
+        "Într-o promisiune,"
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": true,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 4,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 43,
+      "model": "phi-3-mini",
+      "theme": "dragoste",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4
+      },
+      "extracted_lines": [
+        "În lumea dragostei, vreau să-ți spui,",
+        "Cei care își simte într-o lume mai bună.",
+        "Dragostea ne-ar face să ne întâlnim,",
+        "Într-o zi de plouă, cu dragostea în mâna."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 1,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 44,
+      "model": "phi-3-mini",
+      "theme": "vară",
+      "expected_constraints": {
+        "syllables_per_line": 8
+      },
+      "extracted_lines": [
+        "Vară, vrem să ne văd,",
+        "Către lumina, într-un zodie,",
+        "Către vremuri, într-un zodie,",
+        "Către vremuri, într-un zodie,"
+      ],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 2,
+      "syllable_line_total": 4,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 45,
+      "model": "phi-3-mini",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB"
+      },
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": false,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": "Extracted 0 lines for scheme AABB",
+      "joint_pass": false
+    },
+    {
+      "id": 46,
+      "model": "phi-3-mini",
+      "theme": "libertate",
+      "expected_constraints": {
+        "lines": 6
+      },
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": false,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 47,
+      "model": "phi-3-mini",
+      "theme": "prietenie",
+      "expected_constraints": {},
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 48,
+      "model": "phi-3-mini",
+      "theme": "mare",
+      "expected_constraints": {},
+      "extracted_lines": [],
+      "clean_format": false,
+      "line_count_passed": null,
+      "syllable_stanza_exact": null,
+      "syllable_stanza_tol1": null,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 0,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 49,
+      "model": "phi-3-mini",
+      "theme": "tristețe",
+      "expected_constraints": {
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "extracted_lines": [
+        "Într-o zi de sfârșit,",
+        "Sunetul lumii,",
+        "Solele sunt în perechea,",
+        "Să-ți vădă, vă spune."
+      ],
+      "clean_format": false,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 0,
+      "syllable_line_tol1_hits": 0,
+      "syllable_line_total": 4,
+      "rhyme_passed": null,
+      "unresolved_endings": 0,
+      "total_endings": 0,
+      "rhyme_error": null,
+      "joint_pass": false
+    },
+    {
+      "id": 50,
+      "model": "phi-3-mini",
+      "theme": "plimbare pe faleză",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "extracted_lines": [
+        "Într-o zi de plou,",
+        "Pe măsura, pe faleză,",
+        "Apus, pe plimbare,",
+        "4 versuri, ABBA, 7 silabe."
+      ],
+      "clean_format": true,
+      "line_count_passed": true,
+      "syllable_stanza_exact": false,
+      "syllable_stanza_tol1": false,
+      "syllable_line_exact_hits": 1,
+      "syllable_line_tol1_hits": 3,
+      "syllable_line_total": 4,
+      "rhyme_passed": false,
+      "unresolved_endings": 2,
+      "total_endings": 4,
+      "rhyme_error": null,
+      "joint_pass": false
+    }
+  ]
+}
