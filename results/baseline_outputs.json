@@ -1,0 +1,1771 @@
+{
+  "metadata": {
+    "type": "baseline_zero_shot",
+    "models": {
+      "qwen2.5-3b": "unsloth/Qwen2.5-3B-Instruct",
+      "llama-3.2-3b": "unsloth/Llama-3.2-3B-Instruct",
+      "phi-3-mini": "unsloth/Phi-3-mini-4k-instruct"
+    },
+    "load_in_4bit": true,
+    "generation_config": {
+      "max_new_tokens": 300,
+      "do_sample": false
+    },
+    "seed": 42,
+    "n_prompts": 50
+  },
+  "outputs": [
+    {
+      "id": 1,
+      "model": "qwen2.5-3b",
+      "prompt": "4 versuri, rimă încrucișată, 8 silabe: un refren trist despre o dragoste care s-a terminat. Mă ajuți?",
+      "theme": "dragoste tristă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Pentru a crea o poezie cu criteriile cerute (rimă încrucișată, 4 versuri, 8 silabe, și un refren), voi încerca să generez o poezie care să reflecteze o dragoste care s-a terminat într-un ton trist. Iată ce am obținut:\n\nRefren:\nTrăsăturile tău rămân,\nÎn cor la mine se întâlnesc.\nDragoste ce s-a sfârșit,\nSunt mereu în mine.\n\n1. Versul 1:\nMălțuiți de nevoi tăi,\nNemultumit, împărtășit.\nCâteva zile, păcii rămâne,\nDar nici mărețe nesfârșite.\n\n2. Versul 2:\nFurtunul tău, ca un vis,\nÎn cor meu, se încriniște.\nNimic nu mă încurajează,\nPe viața noastră, să rămânem.\n\n3. Versul 3:\nLumea neașteptată, pe lângă noi,\nA scos-n, într-o altă lume.\nNemultumit, împărtăș"
+    },
+    {
+      "id": 2,
+      "model": "qwen2.5-3b",
+      "prompt": "Fac o piesă pop pentru vară și am nevoie de o strofă, 4 versuri cu rimă AABB și 10 silabe pe vers, despre cum se termină vacanța. Să aibă ritm alert.",
+      "theme": "sfârșit de vară",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Bună! Iată o piesă pop pentru vară în limba română, folosind criteriile tale, cu un ritm alert și 10 silabe pe vers:\n\nVacanța se sfârște, zilele scurte,\nÎntr-o lume de frumusețe, împărtășită.\nPentru cea mai bună vacanță, am plecat,\nIată câteva zile, iar acum am plecat.\n\nCâteva zile mai rămân, iar vacanța,\nS-a încălțat, s-a împlinit, s-a încălțat.\nPentru cea mai bună vacanță, am plecat,\nIată câteva zile, iar acum am plecat.\n\nVacanța se sfârște, zilele scurte,\nÎntr-o lume de frumusețe, împărtășită.\nPentru cea mai bună vacanță, am plecat,\nIată câteva zile, iar acum am plecat.\n\nAceastă piesă are 4 versuri cu rimă AABB și 10 silabe pe vers, în conformitate cu cerințele tale. Esper că aceasta va fi utilă și"
+    },
+    {
+      "id": 3,
+      "model": "qwen2.5-3b",
+      "prompt": "Rimă îmbrățișată, 4 versuri, 8 silabe. Tema: ploaia.",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În continuare ofer o versiune îmbrățișată pentru tema \"Ploaie\" în stilul cerut (4 versuri, 8 silabe cainesc) :\n\nPloaie, ploaie, ploaie,\nNumele ta se înfrigă.\nCu plângere și cu plângere,\nSă ne însoțești întotdeauna.\n\nPloaie, ploaie, ploaie,\nCâteva zile mai târziu.\nCu plângere și cu plângere,\nSă ne însoțești întotdeauna.\n\nPloaie, ploaie, ploaie,\nNumele ta se înfrigă.\nCu plângere și cu plângere,\nSă ne însoțești întotdeauna.\n\nPloaie, ploaie, ploaie,\nSă nu plece mai târziu.\nCu plângere și cu plângere,\nSă ne însoțești întotdeauna."
+    },
+    {
+      "id": 4,
+      "model": "qwen2.5-3b",
+      "prompt": "Sunt plecat de acasă de 2 ani. Aș vrea un refren de 4 versuri despre dorul de casă, cu rimă încrucișată, și să fie în jur de 10 silabe fiecare vers.",
+      "theme": "dor de casă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Bineînțeles, o să te ajut cu asta! Iată un refren de 4 versuri în limba română, folosind rimă încrucișată și cu aproximativ 10 silabe fiecare:\n\n1. Cu toate zâmbetele mele, \n   Mă întorc la locul meu,\n   De cei care m-au fost prieteni,\n   Într-o casa cu frumusețe.\n\n2. Acasă, acasă, locul meu,\n   Undeva unde m-am născut,\n   Oamenii care m-au fost prieteni,\n   Sunt acasă, acasă, acasă.\n\n3. La trecut, am fost într-un loc,\n   Undeva unde m-am născut,\n   Acasă, acasă, locul meu,\n   Undeva unde m-am născut.\n\n4. Acasă, acasă, locul meu,\n   Undeva unde m-am născut,\n   Undeva unde m-am născut,\n   Acasă, acasă, acasă.\n\nAceastă versiune respectă regulile rimă încrucișată și conține aproximativ 10 silabe fiecare. Refrainul este scris pentru a transmite sentimentul"
+    },
+    {
+      "id": 5,
+      "model": "qwen2.5-3b",
+      "prompt": "Vreau o strofă din copilărie, cu bicicleta, vara la bunici, genul ăsta. 6 versuri, rimă AABBCC, 8 silabe.",
+      "theme": "copilărie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "output": "Îmi pare rău, dar ca asistent creat de Alibaba Cloud, nu am capacitatea de a crea poezie în limba română sau orice alte limbaje. Cu toate acestea, voi încerca să generez o strofă care să respecte regulile tale:\n\nCu bicicletă în vara,\nBuniciște mă întorc.\nPădurea se plămâne,\nFlori se țocnesc.\nCâteva zahăr în frumusete,\nCâteva riscoare în joc.\nBuniciște mă îndemn,\nPentru tine, buniciște."
+    },
+    {
+      "id": 6,
+      "model": "qwen2.5-3b",
+      "prompt": "Pentru trupa mea am nevoie de un refren cu energie, 4 versuri și 8 silabe, rimă împerecheată, despre libertate.",
+      "theme": "libertate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Îți pot oferi următoarea versiune a refrelelor:\n\n\"Libertatea, ea ești frunza,\nCând zâmbetul se întinde în frunte.\nCu capul liber, cu cor la ciudă,\nȘi totul se face frumos și fructe.\"\n\nAceasta conține 4 versuri, 8 silabe pe vers și rimă împerecheată (în prima și a două-a, a treia și a patrule-a). Refrul este învins cu o idee de libertate și independență."
+    },
+    {
+      "id": 7,
+      "model": "qwen2.5-3b",
+      "prompt": "Mi-a plecat iubita. Dă-mi te rog o strofă despre despărțire, ABAB, 4 versuri, 11 silabe, să doară puțin.",
+      "theme": "despărțire",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "Încercând să respect cătunul cerut, ofer o versiune simplă:\n\nDespre despărțire,\nCâteva zile mă împart,\nCu dragă moșen,\nSă ne întâlnim mai târziu.\nÎntr-o altă lume,\nPână ce mă întâlnim înapoi."
+    },
+    {
+      "id": 8,
+      "model": "qwen2.5-3b",
+      "prompt": "Scrie-mi 4 versuri cu rimă îmbrățișată, 10 silabe, ceva despre orașul noaptea, cu luminile și străzile goale. Ton nostalgic.",
+      "theme": "oraș noaptea",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Împărtășită de noapte, orașul se închide,\nLuminoasele lucruerii, o scurtă choral.\nStrăzile, ca pădurea în târgul negru,\nSău zâmbetul căsătoreților, într-un ron.\n\nPădurea de lucrueri, cu ochelari pline,\nȘi zvonul de la școală, într-o lume de iarnă.\nCâteva oameni, pe strângul căpătă,\nȘi șoarele, într-o lume de iarnă.\n\nNoaptea, cu toate lumile pe strâng,\nȘi șoarele, într-o lume de iarnă.\nȘi șoarele, într-o lume de iarnă.\nȘi șoarele, într-o lume de iarnă."
+    },
+    {
+      "id": 9,
+      "model": "qwen2.5-3b",
+      "prompt": "Cânt la o petrecere sâmbătă și caut un refren vesel despre iubire. Ritm cât mai alert, 4 versuri, rimă AABB, 8 silabe.",
+      "theme": "dragoste fericită",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În petrecere sâmbăță,\nAm văzut o prietenoasă.\nCu dragetul ei se cunoscuse,\nȘi se înflorisea toată.\n\nCu ochii plin de speranță,\nȘi cu gânduri de lume.\nIubirea se întinde,\nLa rândul nostru, totul.\n\nSă ne întrebi pe cea mai bună,\nȘi să ne împărtășim toate.\nIubirea, viața și pacea,\nÎntr-o petrecere, totul."
+    },
+    {
+      "id": 10,
+      "model": "qwen2.5-3b",
+      "prompt": "Mă ajuți cu o strofă despre toamnă? 8 versuri, 8 silabe la fiecare, făcută din două catrene cu rimă încrucișată.",
+      "theme": "toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "output": "Îmi rezum că vrei o strofă în stilul românesc, folosind rimă încrucișată și formată din două catrene, fiecare cu 8 versuri și 8 silabe. Iată ce am găsit:\n\nPrimă catrăne:\nToamna, târgurile pline de zahăr,\nSănătatea, bărbătii și copiilor.\nPădurea, cu fructe de vară,\nÎntotdeauna plină de ploaie și de aur.\n\nA doua catrăne:\nCâteva bărci se întorc în toamnă,\nCu bărcișuri de măsuri diferite.\nBărcișul, cu frunze de verde,\nÎntr-o lume de grăsimă și de șarpe.\n\nAceastă strofă respectă regulile tale, fiind compusă din două catrene, fiecare cu 8 versuri și 8 silabe, folosind rimă încrucișată."
+    },
+    {
+      "id": 11,
+      "model": "qwen2.5-3b",
+      "prompt": "Un refren despre prietenie, pentru cel mai bun prieten al meu, 7 silabe pe vers, 4 versuri, ABAB. E cadou.",
+      "theme": "prietenie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Iată un refrân cu 7 silabe pe vers și 4 versuri în limba română, folosind cadou (c-ad-u):\n\nAmiul meu cel mai bun,\nCu toate tine bune,\nÎți doresc bine întotdeauna,\nȘi te amic cu toții."
+    },
+    {
+      "id": 12,
+      "model": "qwen2.5-3b",
+      "prompt": "Mă simt cam singur în ultima vreme. Poți să-mi scrii despre asta, cu rimă împerecheată, 4 versuri de 10 silabe?",
+      "theme": "singurătate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Cu plământul tău, în întunericul noaptea,\nsă ne întrebi pe ce teme te gândești?\nSunt câteva zile când te simți singur,\nîntr-o lume unde orice este posibil.\n\nCu plământul tău, în frunzele miercurii,\nsă ne întrebi ce te dorești să faci?\nSunt câteva zile când te simți singur,\nîntr-o lume unde orice este posibil.\n\nCu plământul tău, în coroanele florei,\nsă ne întrebi ce te dorești să văd?\nSunt câteva zile când te simți singur,\nîntr-o lume unde orice este posibil.\n\nCu plământul tău, în stângă și în drept,\nsă ne întrebi ce te dorești să fie?\nSunt câteva zile când te simți singur,\ndar într-o lume unde orice este posibil."
+    },
+    {
+      "id": 13,
+      "model": "qwen2.5-3b",
+      "prompt": "Hai cu o strofă despre iarnă, ceva liniștit, cu rimă îmbrățișată, 4 versuri și 8 silabe.",
+      "theme": "iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Iarnul cu pui dulce,\nNumele se închide în snu.\nLucei morii plăcea,\nÎn întuneric, făcând să nu meargă."
+    },
+    {
+      "id": 14,
+      "model": "qwen2.5-3b",
+      "prompt": "Track de dance, ritm foarte alert. Refren despre o noapte în club: AABB, 8 silabe, 4 versuri.",
+      "theme": "noapte în club",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Bineînțărită ideea ta! Iată câteva versuri de track de danse cu refrânul cerut, folosind formatul și ritmulul specificți (AABB, 8 silabe, 4 versuri):\n\n1. Noaptea începe în club, \n   Luminașa se șterzează,\n   Muzica se șocă, \n   Noaptea începe în club.\n\n2. Bărbății se șocă,\n   Femeile se șterzează,\n   Râurile se șocă,\n   Noaptea începe în club.\n\n3. Când luminașa se șterzează,\n   Muzica se șocă,\n   Noaptea începe în club,\n   Noaptea începe în club.\n\n4. Cu pasul său, cu frunză,\n   Cu râul său, cu șocă,\n   Noaptea începe în club,\n   Noaptea începe în club.\n\nAceste versuri respectă formatul cerut (AABB) și sunt compuse în 8 silabe, fiecare vers fiind format din 4 rânduri."
+    },
+    {
+      "id": 15,
+      "model": "qwen2.5-3b",
+      "prompt": "Cum ai scrie despre cât de repede trece timpul? 6 versuri cu rimă încrucișată, 10 silabe.",
+      "theme": "trecerea timpului",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "output": "Până când scuții se șterg,\nTimpul șoarează, șoc și șoc.\nCâteva ore, peste cap,\nȘi șocul trecere începe.\nMare șoc, mica șoc,\nTimpul șoc, șoc și șoc.\nÎntr-o frază, într-un moment,\nTimpul șoc, șoc și șoc.\nSfântul șoc, sfântul șoc,\nTimpul șoc, șoc și șoc.\nCâteva ore, peste cap,\nȘi șocul trecere începe.\nȘocul trecere, șocul trecere,\nTimpul șoc, șoc și șoc.\nÎntr-o frază, într-un moment,\nTimpul șoc, șoc și șoc.\nȘocul trecere, șocul trecere,\nTimpul șoc, șoc și șoc."
+    },
+    {
+      "id": 16,
+      "model": "qwen2.5-3b",
+      "prompt": "Caut un refren care să dea speranță cuiva care trece printr-o perioadă grea. ABAB, 4 versuri, 8 silabe.",
+      "theme": "speranță",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Astrăgeți-nu în afacerea zâmbetului,\nCând zâmbetele rămân mereu în spate.\nÎn timp ce zâmbetele se pierd,\nPăstrați-nu în corul dumneavoastră speranța.\n\nCu toate zâmbetele care se pierd,\nSperanța ta rămâne în corul dumneavoastră.\nCu toate perioadele grei,\nSperanța ta rămâne și mai puternic."
+    },
+    {
+      "id": 17,
+      "model": "qwen2.5-3b",
+      "prompt": "Ador marea. Scrie-mi o strofă ABBA de 4 versuri despre ea, cu 11 silabe.",
+      "theme": "mare",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "Îmi pare rau, dar ca asistent Qwen, nu am capacitatea de a crea proprii melodii sau strophe-uri. Cu toate acestea, pot oferi o versiune simplă a unui cântec ABBA în limba română, folosind 11 silabe pe vers:\n\nAdor marea, cu frumusețe,\nCâteva zile, și tu vei fi,\nPentru mine, pentru mine,\nÎntr-un loc de liniște.\n\nAceasta este o versiune simplă care respectă formatul ABBA și numărul de silabe pe vers. Pentru versiunea exactă a cântecului ABBA, ar trebui să folosești textul original."
+    },
+    {
+      "id": 18,
+      "model": "qwen2.5-3b",
+      "prompt": "E ziua mamei săptămâna viitoare, 4 versuri, rimă încrucișată, 10 silabe, ceva emoționant pentru ea.",
+      "theme": "mama",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Îmi pare răbdător să te ofer o versiune simplificată deoarece sunt un asistent AI și nu am capacitatea de a crea emoționalitatea direct. Cu toate acestea, te pot oferi o versiune care să fie în spiritul cererii tale:\n\n\"Cu dragă zile, cu plină speranță,\nAș dori să-ți spun ce-ai făcut astăzi.\nCu câte emoții, cu câte bătuturi,\nÎn ciuda scurtării, te-am încurajat și apoi.\n\nCu toate înghețurile, cu toate păcile,\nAș dori să-ți spun că te-am înțelept.\nCu toate zâmbeturile, cu toate trăgile,\nÎn ciuda întâlnirilor, te-am încurajat și apoi.\n\nCu toate înghețurile, cu toate păcile,\nAș dori să-ți spun că te-am înțelept.\nCu toate zâmbeturile, cu toate trăgile,\nÎn ciuda întâlnirilor, te-am încurajat și apoi.\"\n\nAceastă versiune vă poate fi utilă, dar trebuie să"
+    },
+    {
+      "id": 19,
+      "model": "qwen2.5-3b",
+      "prompt": "Pentru un rock: refren despre un drum lung făcut cu mașina. Rimă împerecheată, 8 silabe, 4 versuri.",
+      "theme": "drum lung",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Iată o versiune posibilă pentru un rock-uri care să respecte cererile tale:\n\n1. Refren:\n\"Machine drum, machine drum, drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum drum"
+    },
+    {
+      "id": 20,
+      "model": "qwen2.5-3b",
+      "prompt": "Poți să-mi dai despre o dimineață frumoasă 4 versuri, ton luminos, rimă ABAB, 7 silabe?",
+      "theme": "dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Claro, aici sunt patru versuri pentru o dimineață frumoasă, în tonul cerulean și rimă ABAB, cu 7 silabe pe vers:\n\nDimineața de aur, cântecul zâmbet,\nNumele tău, lumea, se încrini.\nLuceau lumi, pământul se încurajă,\nÎn fruntea noastră, neapărător.\n\nPământul se încurajă, neapărător,\nSă ne-ai acoperit cu o capătărie.\nLumi se întuneca, într-o scurtă pausă,\nPentru ceva mai frumos, mai bogat.\n\nCâteva zâmbeturi, câteva plângeri,\nÎn dimineața tău, într-un cântec.\nLumi se întuneca, într-o scurtă pausă,\nPentru ceva mai frumos, mai bogat."
+    },
+    {
+      "id": 21,
+      "model": "qwen2.5-3b",
+      "prompt": "Mi-e dor de satul bunicilor. 6 versuri, rimă împerecheată, câte 8 silabe, te rog, despre locul ăla.",
+      "theme": "bunici și sat",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "output": "Încăperea mea, învățând limba română și poezia, va trece prin procesul transformării. Poetica românească, în special pentru copii, se bazează pe regluri complexe, cum ar fi rimă împerecheată și numărul de silabe. În acest caz, am încercat să generez o vers poezială care să respecte regulile cerute, cu 6 versuri, rimă împerecheată și fiecare vers cu 8 silabe. \n\nPovestea mea ar putea să fie:\n\nMi-e dor de satul bunicilor,\nCând zahărul de licheafă mi-e dor.\nSă mă întorc la râu și la plămân,\nLa șoarele de ploaie și de aur.\nBucurător, cu capul în frunte,\nSunt încăperea mea, în satul meu.\nDor de locul unde niciun bărbat,\nNiciun copac nu mă încetează."
+    },
+    {
+      "id": 22,
+      "model": "qwen2.5-3b",
+      "prompt": "Am un vis pe care nu l-am împlinit. Refren, 4 versuri, rimă îmbrățișată, 10 silabe, despre asta.",
+      "theme": "vis neîmplinit",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Încă părăsite, împărtășit cu nebunie,\nDreptul meu, într-o noapte de neaștiință.\nSă-și înghețească visul, dar nu mai poate,\nPăcălindu-se că nu l-a împlinit.\n\nCâteva zile, ceea ce am văzut, am pierdut,\nUn vis, cu toate bătăliile mele.\nAș dori să-l împlinesc, dar nu m-am putut,\nPăcălindu-mi că nu am reușit să-l întors.\n\nCu toate șocurile, cu toate înghețurile,\nSă-și îmbogățesc visul, dar nu m-am putut.\nPăcălindu-mi că nu am reușit să-l întors,\nPentru a-l avea înainte de neaștiința noaptea.\n\nSă-și îmbogățesc visul, dar nu m-am putut,\nPăcălindu-mi că nu am reușit să-l întors.\nPentru a-l avea înainte de neaștiința noaptea,\nPentru a-l ave"
+    },
+    {
+      "id": 23,
+      "model": "qwen2.5-3b",
+      "prompt": "Strofă despre luna de pe cer, ceva romantic. ABAB, 8 silabe, 4 versuri.",
+      "theme": "lună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Astră pe calea noastră, lună de pe cer,\nNatura într-o scurtă strofă, cu oameni de la cer.\nCu frunzele târpei și cu zâmbetul lor,\nLuna ne-ți oferă lumină, în noaptea de aur."
+    },
+    {
+      "id": 24,
+      "model": "qwen2.5-3b",
+      "prompt": "4 versuri, rimă AABB, 10 silabe, ritm alert: un refren pop despre o iubire de vacanță, ca într-o melodie de radio.",
+      "theme": "iubire de vacanță",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Încercând să împlinim cererea cu toate condițiile, voi face câteva versuri care să fie în rimă AABB, cu 10 silabe și ritm alert, într-un ton de pop despre o iubire de vacanță. \n\n1. Vacanța mă adormează, \n   Vacanța mă adormează.\n   Vacanța mă adormează,\n   Vacanța mă adormează.\n   Cu ei, cu ei, cu ei, cu ei,\n   Vacanța mă adormează.\n\n2. Vacanța mă adormează,\n   Vacanța mă adormează,\n   Vacanța mă adormează,\n   Vacanța mă adormează.\n   Cu ei, cu ei, cu ei, cu ei,\n   Vacanța mă adormează.\n\n3. Vacanța mă adormează,\n   Vacanța mă adormează,\n   Vacanța mă adormează,\n   Vacanța mă adormează.\n   Cu ei, cu ei, cu ei, cu ei,\n   Vacanța mă adormează.\n\n4. Vacanța mă adormează,\n   Vac"
+    },
+    {
+      "id": 25,
+      "model": "qwen2.5-3b",
+      "prompt": "Mi-ai putea scrie, cu 11 silabe pe vers, 4 versuri cu rimă încrucișată, despre un tren care pleacă din gară și cineva rămâne pe peron?",
+      "theme": "tren care pleacă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "Pentru acest scop, voi încerca să scriu o poezie în limba română folosind criteriile tale. Poetica ăsta include 11 silabe pe vers, 4 versuri și rimă încrucișată. Iată ce am găsit:\n\nTrenul de la gară se va întoarce,\nCând vântul strigă și plămânul scintillează.\nPe peron, o femeie se află,\nCu ochii încrucișați cu cel mai frumos.\n\nTrenul de la gară se va întoarce,\nCând vântul strigă și plămânul scintillează.\nPe peron, o femeie se află,\nCu ochii încrucișați cu cel mai frumos.\n\nTrenul de la gară se va întoarce,\nCând vântul strigă și plămânul scintillează.\nPe peron, o femeie se află,\nCu ochii încrucișați cu cel mai frumos.\n\nTrenul de la gară se va întoarce,\nCând vântul strigă și plămânul scintillează.\nPe peron, o femeie se află,\nCu"
+    },
+    {
+      "id": 26,
+      "model": "qwen2.5-3b",
+      "prompt": "Aș vrea o strofă mai amplă despre regret: 8 versuri, două catrene cu rimă încrucișată, 10 silabe.",
+      "theme": "regret",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 10
+      },
+      "output": "În ceea ce privește regulația exactă a versului în limba română, am putea face asta:\n\nPrimă catrăne:\nRegretul meu, în taină, \nCând am pierdut ceva, într-o întâlnire.\nAm sălbatice, cu dragoste,\nPentru ceva, care nu exista mai mult.\n\nSecundă catrăne:\nNumele lui, pe toate pădurile,\nSunt zvonul de un anumit lucru,\nCând mi se spune,\n\"Nu mă uită, am pierdut totul.\"\n\nPrimă catrăne:\nRegretul meu, în taină,\nCând am pierdut ceva, într-o întâlnire.\nAm sălbatice, cu dragoste,\nPentru ceva, care nu exista mai mult.\n\nSecundă catrăne:\nNumele lui, pe toate pădurile,\nSunt zvonul de un anumit lucru,\nCând mi se spune,\n\"Nu mă uită, am pierdut totul.\"\n\nAceastă versiune încearcă să respecte regulația de 10 silabe pentru fiecare vers și să fie în rimă încrucișată. Pentru a face"
+    },
+    {
+      "id": 27,
+      "model": "qwen2.5-3b",
+      "prompt": "Ceva amuzant despre cafeaua de dimineață, fără de care nu funcționez, AABB, 8 silabe, un refren de 4 versuri.",
+      "theme": "cafea de dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Bună dimineață, cu o tază de cafea,\nAABB, 8 silabe, în mod perfect.\nPentru mine, cafea este primul lucru,\nFără ea, neziușul nu funcționează.\n\nCafea mea, cu toată tradiția,\nÎn timpul matrimoniului, în întâlniri de familie.\nCu toată lumea, cu toată șoareala,\nCafea mea, în dimineața mea, este primul lucru.\n\nCând se apucă dimineața, cu toată șoareala,\nCafea mea, începe să-și plăcea.\nCu toată lumea, cu toată șoareala,\nCafea mea, în dimineața mea, este primul lucru.\n\nAceastă melodie, cu toată tradiția,\nÎn timpul matrimoniului, în întâlniri de familie.\nCu toată lumea, cu toată șoareala,\nCafea mea, în dimineața mea, este primul lucru."
+    },
+    {
+      "id": 28,
+      "model": "qwen2.5-3b",
+      "prompt": "Mă întâlnesc cu un prieten după 10 ani. Scrie-mi o strofă despre revedere, 4 versuri, ABBA, 8 silabe.",
+      "theme": "revedere",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Cu plină încetie,\nVă văduvul știau,\nPână ți-am pierdut.\nAici, la șoarele noastre,\nReveniți, șocul dumneavoastră,\nÎn corpură și în spirit."
+    },
+    {
+      "id": 29,
+      "model": "qwen2.5-3b",
+      "prompt": "7 silabe pe vers, rimă încrucișată, 4 versuri despre păsări și zbor.",
+      "theme": "zbor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "În continuare voi prezenta câteva exemple de rimează incrucișată cu 7 silabe pe vers și 4 versuri despre păsări și zbor:\n\n1. Păsarea sălbatică, în ciobăruțe,\n   Zburătorul de ploaie, în plângere.\n   Natura împinge, în frunzele,\n   Câteva zboruri, în apă.\n\n2. Păsăra de șoapla, în grădina,\n   Zburătorul de pădure, în calea.\n   Natura împinge, în frunzele,\n   Câteva zboruri, în apă.\n\n3. Păsăra de șoapla, în grădină,\n   Zburătorul de pădure, în calea.\n   Natura împinge, în frunzele,\n   Câteva zboruri, în apă.\n\n4. Păsăra de șoapla, în grădină,\n   Zburătorul de pădure, în calea.\n   Natura împinge, în frunzele,\n   Câteva zboruri, în apă.\n\nAceste exemple respectă regula de"
+    },
+    {
+      "id": 30,
+      "model": "qwen2.5-3b",
+      "prompt": "Vreau un refren melancolic, 4 versuri, ABAB, 10 silabe, de toamnă, cu ploaie la geam.",
+      "theme": "ploaie de toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Iată o versiune pentru refrânul melancolică pe temă toamnii și ploaie la geam, în conformitate cu cerințele tale:\n\nPloaie la geam, toamnul se întuneca,\nÎn frunzele mici, zâmbetele se scutec.\nSfântul nebun, în ciocolată de neagră,\nÎntr-o lume de plângeri, îmi spune: \"Toamnă!\""
+    },
+    {
+      "id": 31,
+      "model": "qwen2.5-3b",
+      "prompt": "Poți scrie despre un oraș vechi, 6 versuri, rimă împerecheată, 10 silabe, cu străzi de piatră?",
+      "theme": "oraș vechi",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "output": "Pentru acest scop, voi încerca să scriu o scrisoare în limba română, folosind criteriile pe care le amținut: rimă împerecheată, 10 silabe și străzi de piatră. Voi face atenție la versurile pentru a evita repetitivitate.\n\n1. Străzi de piatră, în șorele vieții,\n   În șorele vieții, străzi de piatră.\n   Vântul călca, în șorele vieții,\n   În șorele vieții, vântul călca.\n   Străzi de piatră, în șorele vieții,\n   În șorele vieții, străzi de piatră.\n\n2. Vântul călca, în șorele vieții,\n   În șorele vieții, vântul călca.\n   Străzi de piatră, în șorele vieții,\n   În șorele vieții, străzi de piatră.\n   Vântul călca, în șorele vieții,\n   În șorele vieții, vântul"
+    },
+    {
+      "id": 32,
+      "model": "qwen2.5-3b",
+      "prompt": "Refren de dans, să se simtă ritmul, 7 silabe, 4 versuri, AABB, tempo alert.",
+      "theme": "dans",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "I'm sorry for the confusion earlier, but as an AI text-based model, I don't create musical refrains or lyrics in the traditional sense. However, I can certainly help you craft a poetic refrain that fits your criteria: 7 syllables per line, 4 lines (verses), with an AABB structure, and a \"tempo alert\" feeling. Here's an example:\n\n**Ritmo rápido,  \nCorazón en piezas,  \nMúsica vibrante,  \nPulso latiendo.**\n\n**Ritmo alerta,  \nFuerza en cada paso,  \nEnergía sin fin,  \nTempos acelerados.**\n\n**Ritmo alerta,  \nCada paso un grito,  \nVida en cada compás,  \nPulso latiendo.**\n\n**Ritmo alerta,  \nCorazón en piezas,  \nMúsica vibrante,  \nPulso latindo.**\n\nFeel free to adjust these lines to better fit your needs or musical style!"
+    },
+    {
+      "id": 33,
+      "model": "qwen2.5-3b",
+      "prompt": "Îmi place cineva care nu mă vede. Poți scrie 4 versuri, rimă îmbrățișată, 11 silabe, despre o iubire neîmpărtășită?",
+      "theme": "iubire neîmpărtășită",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "Încercând să închei cu un ritm și rimă îmbrățișat, voi face versurile în limba română. Așteptă:\n\n1. Cu ochii tăi, în întuneric, Și cu gura plină de speranță, Și cu bărbia mea, Și cu frunzele mele, Și cu coroanele mele, Și cu pământul meu, Și cu nebunia mea, Și cu furtuna mea, Și cu tigrlor mele, Și cu zmei mele, Și cu șoarele mele, Și cu șoarele tăi, Și cu șoarele mele, Și cu șoarele tăi, Și cu șoarele mele, Și cu șoarele tăi, Și cu șoarele mele, Și cu șoarele tăi, Și cu șoarele mele, Și cu șoarele tăi, Și cu șoarele mele, Și cu șoare"
+    },
+    {
+      "id": 34,
+      "model": "qwen2.5-3b",
+      "prompt": "O strofă ABAB, 4 versuri, 8 silabe, optimistă, despre primăvară, când se trezește totul.",
+      "theme": "primăvară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Bună! Cu plăcuță de lucru, voi încerca să scriu o strofă care să respecte toate criteriile pe care le-leauați. Iată ce am reusit să fac:\n\nPrimăvară, primăvară,\nNatura se trezește întotdeauna.\nÎn fruntea zâmbetului,\nCând se întoarcă lumea în albastră.\n\nPentru a vă oferi o versiune mai personalizată sau pentru a adăuga detalii specifice, vă rugăm să mă spuneți mai multe informații despre temă sau anumite idei specifice. Totuși, asta ar fi o versiune care să respecte toate condițiile date."
+    },
+    {
+      "id": 35,
+      "model": "qwen2.5-3b",
+      "prompt": "Tocmai m-am mutat și o iau de la zero. Un refren de 4 versuri despre asta, rimă AABB, 10 silabe.",
+      "theme": "început nou",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Iată un refren care îndeplinește condițiile tale:\n\n\"În locul vacanței, am începe să înveț,\nLa zero începând, cu speranță și curaj,\nCu pasiune și entuziasm, călătoriște până la cap,\nÎn cadrul noii aventur, la noi orice.\""
+    },
+    {
+      "id": 36,
+      "model": "qwen2.5-3b",
+      "prompt": "Aș vrea, în 8 silabe pe vers și 8 versuri, făcute din două catrene cu rimă încrucișată, o strofă cu amintiri de la țară.",
+      "theme": "amintiri de la țară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "output": "Îmi pare rău, dar ca Qwen, nu am capacitatea de a crea poezie în limba română, deoarece aceasta nu este funcția mea. Cu toate acestea, voi încerca să te ofer un exemplu care să respecte regulile tale, sperând că va fi util pentru tine:\n\nCatre țara, cu frumoasă plăcuță,\nSă-ți zâmbetă, cu bărbatul și fătul.\nPământul, cu mărcișuri de șapte,\nȘi cu șoarele, cu șoarele.\n\nCu șoarele, cu șoarele,\nSă-ți zâmbetă, cu bărbatul și fătul.\nPământul, cu mărcișuri de șapte,\nȘi cu șoarele, cu șoarele.\n\nÎn acest vers, am început cu prima catrăne, apoi am continuat cu cea de-a doua, în mod încrucișat, și am folosit versuri de 8 cuvinte, fiecare cu 8 silabe. Am încorporat elemente de țară, cum ar fi"
+    },
+    {
+      "id": 37,
+      "model": "qwen2.5-3b",
+      "prompt": "Scrie un refren despre telefonul care nu mai sună de când ne-am despărțit. 4 versuri, ABAB, 10 silabe, ton trist.",
+      "theme": "telefon care nu sună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Așa mă simt cu fiecare zbor,\nCând telefonul nu mai sună,\nPână la rândul meu s-a pierdut,\nȘi nici măcar să-l văd.\n\nTrăiesc într-o lumea nevoită,\nCu o gura plină de tristetă,\nȘi cu un cor călătorește,\nPentru un nume care nu există.\n\nÎn noaptea întâlnirea mei,\nMă simt într-un sprijin de sânge,\nCu un cor care se încrini,\nPentru un nume care nu există."
+    },
+    {
+      "id": 38,
+      "model": "qwen2.5-3b",
+      "prompt": "Hai să facem 4 versuri, rimă AABB, 8 silabe, despre stele și noapte.",
+      "theme": "stele și noapte",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Cert, iată patru versuri în limba română care respectă criteriile pe care le-ți am puse:\n\n1. Stelele, în noapte întunecată,\n   Lumina lor împinge cu plăcere.\n   Numele lor, în ciocârlițe,\n   Sunt o trăsătare de lumea noastră.\n\n2. Noaptea se înflorește cu stele,\n   Lumina lor într-o scurtă război.\n   Câteva zâmbeturi, câteva glasuri,\n   În noapte, în ciocârlița lor.\n\n3. Stelele, în noapte întunecată,\n   Lumina lor împinge cu plăcere.\n   Numele lor, în ciocârlițe,\n   Sunt o trăsătare de lumea noastră.\n\n4. Stelele, în noapte întunecată,\n   Lumina lor într-o scurtă război.\n   Numele lor, în ciocârlițe,\n   Sunt o trăsătare de lumea noastră.\n\nAceste versuri au rimă AABB și conțin aproximativ 8 silabe pe vers"
+    },
+    {
+      "id": 39,
+      "model": "qwen2.5-3b",
+      "prompt": "Mă ajuți să scriu despre dor? 6 versuri, rimă încrucișată, 8 silabe.",
+      "theme": "dor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "output": "Bună! Cu plăcere îți voi ajuta să scrie o poezie cu condițiile cerute. Iată câteva versuri în limba română, folosind rimă încrucișată și 8 silabe:\n\nDorul, un nebun, căpătă,\nÎn cor la femei, în soare.\nCând se întâlnesc, el scurt,\nSpre lumea încearcă să scurt.\n\nDorul, un zvon, răzgătit,\nÎn cor la bărbați, în neapărat.\nCând se întâlnesc, el scurt,\nSpre lumea încearcă să scurt.\n\nDorul, un vânt, căpătă,\nÎn cor la toate, în nesfârșit.\nCând se întâlnesc, el scurt,\nSpre lumea încearcă să scurt.\n\nAceastă poezie încearcă să captureze sentimentul de dor, reflectând anumite situații în care acest sentiment apare. Poetica rimă încrucișată și 8 silabe sunt satisfăcute în aceste versuri."
+    },
+    {
+      "id": 40,
+      "model": "qwen2.5-3b",
+      "prompt": "Track de hip-hop despre cartierul în care am crescut. Flow alert, refren de 4 versuri, rimă împerecheată, 11 silabe.",
+      "theme": "cartier",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "Sure, here's a hip-hop track about the place where I grew up, with the structure you requested:\n\n(Verse 1)\nYo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo\nYo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo\nYo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo\nYo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo\n\nGrown in the streets, where the sun don't shine\nConcrete jungle, where the trees don't thrive\nRap battles on the block, that's where I learned to rhyme\nIn the park, under the stars, that's where I found my line\n\n(Chorus)\nYo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo\nYo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo\nYo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo\nYo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo\n\nYo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo, yo"
+    },
+    {
+      "id": 41,
+      "model": "qwen2.5-3b",
+      "prompt": "O seară de iarnă lângă sobă. Strofă de 4 versuri, rimă îmbrățișată, 8 silabe, poți?",
+      "theme": "seară de iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "O seară de iarnă deasupra sobei,\nPădurea întunecată în tămârul său.\nSobăa plină cu fructe roșii și negre,\nÎn stânceri de neagră, păcălui.\n\nȘi în fața ei, pădurea întunecată,\nCu bărbii de iarna, în tămârul său.\nCâteva zahăruri, cu fructe de iarnă,\nÎn stânceri de neagră, păcălui.\n\nPădurea întunecată, în tămârul său,\nÎn fața lui, soba plină cu fructe.\nCâteva zahăruri, cu fructe de iarnă,\nÎn stânceri de neagră, păcălui.\n\nȘi în fața ei, pădurea întunecată,\nCu bărbii de iarna, în tămârul său.\nCâteva zahăruri, cu fructe de iarnă,\nÎn stânceri de neagră, păcălui.\n\nAceastă strofă îmbrățișează rimă și rit"
+    },
+    {
+      "id": 42,
+      "model": "qwen2.5-3b",
+      "prompt": "Mi-a promis că rămâne și a plecat. Un refren despre promisiuni încălcate, ABAB, 7 silabe, 4 versuri.",
+      "theme": "promisiune încălcată",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Îmi pare rău, dar ca asistent cu capacitatea de a crea poezie, nu am capacitatea de a crea un refren în limba română care să respecte toate condițiile pe care le ai menționate. Cu toate acestea, voi încerca să ofer o versiune care să fie cât mai aproape posibil:\n\n\"Promisiuni încălțate, rămâne și a plecat,\nCâteva zile, ceea ce se întâlnise, a plecat.\nFără să-și încearcă să-și spune,\nPentru a-și păstra cea mai bună parte.\"\n\nAceastă versiune începe cu ABAB, are 7 silabe în fiecare vers și are 4 versuri. Totuși, este important să subliniez că acest refren nu este creat de mine, ci folosesc ideea dvs. pentru a crea versiunea mea."
+    },
+    {
+      "id": 43,
+      "model": "qwen2.5-3b",
+      "prompt": "Scrie-mi o strofă de dragoste, 4 versuri, rimă ABAB. Cu silabele te las pe tine.",
+      "theme": "dragoste",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4
+      },
+      "output": "Îmi pare rau, dar ca asistent AI, nu am capacitatea de a crea poezie creativă sau a adăta versuri de dragoste. Cu toate acestea, pot oferi o strofă de dragoste în limba română care să respecte formatul și rimul ABAB, dar nu va fi creativitatea mea:\n\nCu toate zilele, cu toate noapte,\nCând crești și câștigeți vânt,\nCu toate luni, cu toate joi,\nDragostea ta se înrăutășește."
+    },
+    {
+      "id": 44,
+      "model": "qwen2.5-3b",
+      "prompt": "8 silabe pe vers: un refren despre vară, restul îți las ție.",
+      "theme": "vară",
+      "expected_constraints": {
+        "syllables_per_line": 8
+      },
+      "output": "Claro! Iată un răfrun cu 8 silabe legat de vară:\n\n\"Vară vine cu fructe pline.\"\n\nAici se numără:\n1. Vară (5)\n2. Vinea (3)\n\nTotal: 8 silabe\n\nRăfrumurul este în limba română și reflectă ideea că vară vine cu fructe pline, ceea ce sugerează sănătate și plăcere."
+    },
+    {
+      "id": 45,
+      "model": "qwen2.5-3b",
+      "prompt": "Poți scrie ceva despre ploaie? Să aibă rimă împerecheată, atât.",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB"
+      },
+      "output": "Ploaie, ploaie, zâmbeturi plăcui,\nNumele tău, ploaie, în liniște se scuza."
+    },
+    {
+      "id": 46,
+      "model": "qwen2.5-3b",
+      "prompt": "Dă-mi 6 versuri despre libertate.",
+      "theme": "libertate",
+      "expected_constraints": {
+        "lines": 6
+      },
+      "output": "Bună! Iată șase versuri despre libertate:\n\n1. \"Libertatea este o frunză de luceală, care se întinde peste toate zori și noile.\" - Poetul și filozoful românesc Mihai Eminescu\n\n2. \"Nimic nu există mai mult decât libertatea, ci nimic nu există mai puțin decât ea.\" - Poetul și filozoful francez Voltaire\n\n3. \"Libertatea este un frunză de luceală, care se întinde peste toate zori și noile.\" - Aceeași versiune ca prima, dar în limba română, devenind populară prin intermediul lui Eminescu.\n\n4. \"Libertatea este o frunză de luceală, care se întinde peste toate zori și noile.\" - Versul acestor poeti și filozofi, care prezintă ideea că libertatea este o forță lumină care illuminează și împinge pe toate.\n\n5. \"Libertatea este o frunză de luceală, care se întinde peste toate zori și noile.\" - Versul repetat pentru a sublina importanța și durabilit"
+    },
+    {
+      "id": 47,
+      "model": "qwen2.5-3b",
+      "prompt": "Un refren pop despre prietenie, ceva cu ritm alert.",
+      "theme": "prietenie",
+      "expected_constraints": {},
+      "output": "Aici este o versiune potențială pentru un refrân pop despre prietenie, cu un ritm alert:\n\n(Refrân)\nPrietenie, prietenie, \nCu toate zilele, într-o echipă,\nCu toate zilele, într-o echipă,\nPrietenie, prietenie, \nCu toate zilele, într-o echipă.\n\n(Refrân repetat)\n\n(Parolele acestea au fost creată pentru a fi atât de alert cât și corespunzătoare temeiului dat, fără a oferi informații sau idei specifice care ar putea să fie oferite de către alte persoane sau instituții.)"
+    },
+    {
+      "id": 48,
+      "model": "qwen2.5-3b",
+      "prompt": "scrie ceva despre mare",
+      "theme": "mare",
+      "expected_constraints": {},
+      "output": "Mare - cuvânt care se referă la dimensiune sau înconjurări. În contextul natural, \"mare\" se referă la o corpă de apă extinsă, cum ar fi un lac sau un ocean. În termențe biologice, \"mare\" se folosește pentru a distinge între specii de organismuri marine, cum ar fi mamiferele mari și pescuitul. \n\nPentru a face acest subiect mai specific și interesant, vă propun să discutăm despre Oceanul Atlantic, care este cel mai mare ocean din lume, cu 100 milioane de kilometri pătrati de apă. Este un element crucial al climatului global și contribuie la reglarea temperaturi și circulației aerului pe plan global. \n\nÎn termeni geografici, Oceanul Atlantic începe de la extrem de estul Africii până la extrem de vestul Americii de Nord. Este un mediul de viață important pentru multe specii de animale și vegetație marine. \n\nDacă aveți nevoie de informații suplimentare despre Oceanul Atlantic sau alte aspecte legate de \"mare\", vă rog să mă ziceți și eu va fi gata să vă ofer ace"
+    },
+    {
+      "id": 49,
+      "model": "qwen2.5-3b",
+      "prompt": "Vreau ceva trist, 4 versuri, 10 silabe, fără rimă anume.",
+      "theme": "tristețe",
+      "expected_constraints": {
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Întâlnire cu Luna,\nsă înceapă noapte frumoasă,\nnemultă, într-o școală zahărului,\nîn somnul tău de copil."
+    },
+    {
+      "id": 50,
+      "model": "qwen2.5-3b",
+      "prompt": "La apus, pe faleză. Un refren despre o plimbare de-a lungul mării, 4 versuri, ABBA, 7 silabe.",
+      "theme": "plimbare pe faleză",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Încercarea mea de să scriu un refren în limba română care să fie semnificativă și să corespundă regulilor poeziei (ABBA) și să fie de 7 sălbi se pare dificilă pentru o lingvistă experiențată ca Baudelaire sau Rimbaud. Cu toate acestea, voi încerca să ofer o versiune care să fie cât mai aproape posibil de poezie ABBA ABBA ABBA.\n\n\"La apus, pe mării plin, \nCâteva zile, ceea ce vrem,\nCu frunze de luna în mânuie,\nSă ne întâlnim la apus.\"\n\nAceastă versiune începe cu ABBA (la apus, pe mării plin), respectând regulile ABBA ABBA ABBA, dar nu este exact un refren ABBA ABBA ABBA ABBA, deoarece refrenele clasice sunt adesea de 8 sălbi. De asemenea, versiunea mea nu respectă exact regula de 7 sălbi, deoarece are 10 sălbi. \n\nPentru a face acest refren exact ABBA ABBA ABBA, ar trebui să folosesc do"
+    },
+    {
+      "id": 1,
+      "model": "llama-3.2-3b",
+      "prompt": "4 versuri, rimă încrucișată, 8 silabe: un refren trist despre o dragoste care s-a terminat. Mă ajuți?",
+      "theme": "dragoste tristă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Îmi pare rău, dar nu pot găsi o versificare cu 4 versuri, rimă încrucișată și 8 silabe. Cu toate acestea, pot sugerați o versificare care îndeplinșește aceste condiții:\n\nVersul 1:\nLuna plină, o noapte frigă\nS-a despărțit de mine, fără să mă gândi\nCăldura noastră, o flacără\nCare a dispărut, fără să mai stea\n\nVersul 2:\nMă gândesc la tine, în noapte\nCând am fost împreună, în lumea noastră\nAmprentele tale, pe mine rămân\nDar acum, tu ești departe, fără să mai fi\n\nVersul 3:\nOchii mei, ei știu totul\nCă dragostea noastră, a fost o flacără\nCare a ars, fără să mai stea\nIar acum, eu sunt singur, fără să mai fi\n\nVersul 4:\nSunt într-o lume, fără tine\nCăldura noastră, a dispărut, fără să"
+    },
+    {
+      "id": 2,
+      "model": "llama-3.2-3b",
+      "prompt": "Fac o piesă pop pentru vară și am nevoie de o strofă, 4 versuri cu rimă AABB și 10 silabe pe vers, despre cum se termină vacanța. Să aibă ritm alert.",
+      "theme": "sfârșit de vară",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "În vară, am visat să merg,\nPentru plăcere, fără griji și frică.\nCu prietenii, am dansat și cântat,\nÎntr-un lângă-lângă, fără vreo ură.\n\nAm vizitat locuri frumoase,\nCu soare și cu plăcere, fără vreo ură.\nAm împărtășit momente frumoase,\nCu prietenii, fără vreo ură.\n\nAm petrecut zile de vară,\nCu plăcere, fără griji și frică.\nAm făcut amintiri frumoase,\nCu prietenii, fără vreo ură.\n\nAcum, vacanța se termină,\nCu plăcere, fără griji și frică.\nAm împărtășit momente frumoase,\nCu prietenii, fără vreo ură."
+    },
+    {
+      "id": 3,
+      "model": "llama-3.2-3b",
+      "prompt": "Rimă îmbrățișată, 4 versuri, 8 silabe. Tema: ploaia.",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Ploaia cadă pe pământ,\nUmplând liniștea noaptea,\nNimbozii se străjuiesc,\nPloaia îmbrăcă pământul."
+    },
+    {
+      "id": 4,
+      "model": "llama-3.2-3b",
+      "prompt": "Sunt plecat de acasă de 2 ani. Aș vrea un refren de 4 versuri despre dorul de casă, cu rimă încrucișată, și să fie în jur de 10 silabe fiecare vers.",
+      "theme": "dor de casă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Într-un război de sentimente,\nDorul meu de casă este un foc,\nÎntr-un luptă cu tristețea,\nSunt într-o luptă cu frigul.\n\nÎntr-un vis de libertate,\nSunt într-o luptă cu frigul,\nÎntr-un război de sentimente,\nDorul meu de casă este un foc.\n\nÎntr-un vis de libertate,\nSunt într-o luptă cu frigul,\nÎntr-un război de sentimente,\nSunt într-o luptă cu frigul.\n\nÎntr-un vis de libertate,\nSunt într-o luptă cu frigul,\nÎntr-un război de sentimente,\nDorul meu de casă este un foc."
+    },
+    {
+      "id": 5,
+      "model": "llama-3.2-3b",
+      "prompt": "Vreau o strofă din copilărie, cu bicicleta, vara la bunici, genul ăsta. 6 versuri, rimă AABBCC, 8 silabe.",
+      "theme": "copilărie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "output": "În vară, când soarele strălucește,\nBicicleta mea era mea, o pasăre.\nLa bunici, unde mă bucur și mă joc,\nÎn grădină, unde florile zăcuseră.\nCu bicicleta, mă simt liber și frânt,\nÎn vară, când viața este plină de sunet."
+    },
+    {
+      "id": 6,
+      "model": "llama-3.2-3b",
+      "prompt": "Pentru trupa mea am nevoie de un refren cu energie, 4 versuri și 8 silabe, rimă împerecheată, despre libertate.",
+      "theme": "libertate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Îmi pare rău, dar nu pot găsi un refren cu energie, 4 versuri și 8 silabe, rimă împerecheată, despre libertate."
+    },
+    {
+      "id": 7,
+      "model": "llama-3.2-3b",
+      "prompt": "Mi-a plecat iubita. Dă-mi te rog o strofă despre despărțire, ABAB, 4 versuri, 11 silabe, să doară puțin.",
+      "theme": "despărțire",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "În umbra ta, rămâi\nCăldura ta, o gândesc\nDespărțirea, o durere\nÎn inimă, o rămâne"
+    },
+    {
+      "id": 8,
+      "model": "llama-3.2-3b",
+      "prompt": "Scrie-mi 4 versuri cu rimă îmbrățișată, 10 silabe, ceva despre orașul noaptea, cu luminile și străzile goale. Ton nostalgic.",
+      "theme": "oraș noaptea",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Noaptea orașului, străzile goale,\nLuminile strălucesc, cu o melodie,\nPloaia cadă, cu un zâmbet deosebit,\nÎn noaptea orașului, am gânduri de altădată."
+    },
+    {
+      "id": 9,
+      "model": "llama-3.2-3b",
+      "prompt": "Cânt la o petrecere sâmbătă și caut un refren vesel despre iubire. Ritm cât mai alert, 4 versuri, rimă AABB, 8 silabe.",
+      "theme": "dragoste fericită",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În sâmbătă se petrece, o noapte de dragoste,\nCu iubirea în inimă, totul este bine.\nÎn brațele mele, găsește-ți refugiu,\nÎn iubirea noastră, totul este bine."
+    },
+    {
+      "id": 10,
+      "model": "llama-3.2-3b",
+      "prompt": "Mă ajuți cu o strofă despre toamnă? 8 versuri, 8 silabe la fiecare, făcută din două catrene cu rimă încrucișată.",
+      "theme": "toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "output": "În toamnă, soarele scade,\nLumină, cald, și frumos,\nPădurea se umplă cu mări,\nCăprioarele se ascund.\nFrumos, cald, și plin de mări,\nToamna se umple de mări,\nCăprioarele se ascund,\nPădurea se umplă cu mări."
+    },
+    {
+      "id": 11,
+      "model": "llama-3.2-3b",
+      "prompt": "Un refren despre prietenie, pentru cel mai bun prieten al meu, 7 silabe pe vers, 4 versuri, ABAB. E cadou.",
+      "theme": "prietenie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "În lumea plină de străini,\nCu tine, eu am găsit un loc,\nUn prieten de inimă, un prieten de inimă,\nUnde dragostea ne va face loc.\n\nCu tine, eu am găsit un prieten,\nÎn lumea plină de străini,\nUn prieten de inimă, un prieten de inimă,\nUnde dragostea ne va face loc.\n\nCu tine, eu am găsit un prieten,\nÎn lumea plină de străini,\nUn prieten de inimă, un prieten de inimă,\nUnde dragostea ne va face loc.\n\nCu tine, eu am găsit un prieten,\nÎn lumea plină de străini,\nUn prieten de inimă, un prieten de inimă,\nUnde dragostea ne va face loc."
+    },
+    {
+      "id": 12,
+      "model": "llama-3.2-3b",
+      "prompt": "Mă simt cam singur în ultima vreme. Poți să-mi scrii despre asta, cu rimă împerecheată, 4 versuri de 10 silabe?",
+      "theme": "singurătate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Într-un lângă lângă, singurul meu drum,\nSunt împreună cu gândurile mele,\nÎntr-un mediu vast, cu străzile lungi,\nSunt singur, fără voce, fără sunet."
+    },
+    {
+      "id": 13,
+      "model": "llama-3.2-3b",
+      "prompt": "Hai cu o strofă despre iarnă, ceva liniștit, cu rimă îmbrățișată, 4 versuri și 8 silabe.",
+      "theme": "iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Iarnă se spune cu voce susurată,\nCând zăpada coboară pe străzi,\nCântecele de iarnă ne aducă,\nLiniștea și dragoste, în noapte."
+    },
+    {
+      "id": 14,
+      "model": "llama-3.2-3b",
+      "prompt": "Track de dance, ritm foarte alert. Refren despre o noapte în club: AABB, 8 silabe, 4 versuri.",
+      "theme": "noapte în club",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În noaptea de club, sunetul strâns\nA se desfășoară, ritmul ne-împiedică\nÎn jurul meu, oameni care dansă\nÎn armonie, cu pasul ne-împiedică\n\nÎn această noapte, eu mă simt liber\nCu muzica în jur, eu mă pot răsuci\nÎn dans, eu mă pierd, eu mă simt\nÎn această noapte, eu mă pot iubi"
+    },
+    {
+      "id": 15,
+      "model": "llama-3.2-3b",
+      "prompt": "Cum ai scrie despre cât de repede trece timpul? 6 versuri cu rimă încrucișată, 10 silabe.",
+      "theme": "trecerea timpului",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "output": "Într-un raps, am scris despre timpul:\n\n\"Într-o secundă, trecutul se desface,\nÎntr-o secundă, viitorul se deschide,\nÎntr-o secundă, timpul se scurte,\nÎntr-o secundă, amintiri se pierd,\nÎntr-o secundă, viitorul se străduiește,\nÎntr-o secundă, trecutul se închide.\"\n\nVersurile au 10 silabe și rimă încrucișată, cum așteptați."
+    },
+    {
+      "id": 16,
+      "model": "llama-3.2-3b",
+      "prompt": "Caut un refren care să dea speranță cuiva care trece printr-o perioadă grea. ABAB, 4 versuri, 8 silabe.",
+      "theme": "speranță",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În umbra tenebrosului zori,\nSperanța îți va deschide drumul.\nÎntr-un lume plină de suferință,\nTreci, dar nu te pierzi, dragul meu."
+    },
+    {
+      "id": 17,
+      "model": "llama-3.2-3b",
+      "prompt": "Ador marea. Scrie-mi o strofă ABBA de 4 versuri despre ea, cu 11 silabe.",
+      "theme": "mare",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "Ador marea, ador libertatea,\nÎn marea, găsesc pacea mea,\nLibertatea mă face să zâmbe,\nÎn marea, eu sunt liberă."
+    },
+    {
+      "id": 18,
+      "model": "llama-3.2-3b",
+      "prompt": "E ziua mamei săptămâna viitoare, 4 versuri, rimă încrucișată, 10 silabe, ceva emoționant pentru ea.",
+      "theme": "mama",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Ea va fi o zi specială,\nCu amintiri de dragoste și de vis,\nUn moment de frumusețe,\nCare va rămâne în sufletul ei."
+    },
+    {
+      "id": 19,
+      "model": "llama-3.2-3b",
+      "prompt": "Pentru un rock: refren despre un drum lung făcut cu mașina. Rimă împerecheată, 8 silabe, 4 versuri.",
+      "theme": "drum lung",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Înțeleg! Aici este o sugestie de refren:\n\n\"Drumul lung, drumul dur,\nMașina mă duce departe,\nPeste străzi, peste drumuri,\nÎn căutarea drumului.\"\n\nRimă împerecheată, 8 silabe, 4 versuri."
+    },
+    {
+      "id": 20,
+      "model": "llama-3.2-3b",
+      "prompt": "Poți să-mi dai despre o dimineață frumoasă 4 versuri, ton luminos, rimă ABAB, 7 silabe?",
+      "theme": "dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "În dimineață, soarele strălucește,\nAerul este cald, plin de viață,\nPăsările cântă cu voce dulce,\nUn nou zbor, un nou început de viață."
+    },
+    {
+      "id": 21,
+      "model": "llama-3.2-3b",
+      "prompt": "Mi-e dor de satul bunicilor. 6 versuri, rimă împerecheată, câte 8 silabe, te rog, despre locul ăla.",
+      "theme": "bunici și sat",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "output": "În satul bunicilor, unde trăiau cu drag,\nÎn jurul casei, un frumos parc străjuiau.\nPădurea era plină de copaci înalti,\nCărămizile erau bine gătite, mămăligă era.\nBunicii erau bine îngrijiți, cu grijă,\nFăcuseau mâncare, pentru toți, cu dragă.\nÎn satul bunicilor, unde trăiau cu drag,\nFăceau viață, cu gânduri bine plină."
+    },
+    {
+      "id": 22,
+      "model": "llama-3.2-3b",
+      "prompt": "Am un vis pe care nu l-am împlinit. Refren, 4 versuri, rimă îmbrățișată, 10 silabe, despre asta.",
+      "theme": "vis neîmplinit",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Visul meu, un vis de mâine,\nÎn care tot ce este, este perfect.\nSper să îl împlinesc, în curând,\nȘi să trăiesc, fără nici un răgaz."
+    },
+    {
+      "id": 23,
+      "model": "llama-3.2-3b",
+      "prompt": "Strofă despre luna de pe cer, ceva romantic. ABAB, 8 silabe, 4 versuri.",
+      "theme": "lună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Luna, o femeie de stele,\nÎn cerul noaptea, ei se întâlnesc,\nCu o frumusețe care ne face să trecem\nÎntr-un vis, într-o lume de vis.\n\nEi se gândesc la tine, la mine,\nÎntr-un război de iubire și de dragoste,\nÎntr-un vis, într-o lume de vis,\nÎntr-un cer, într-un cer de stele."
+    },
+    {
+      "id": 24,
+      "model": "llama-3.2-3b",
+      "prompt": "4 versuri, rimă AABB, 10 silabe, ritm alert: un refren pop despre o iubire de vacanță, ca într-o melodie de radio.",
+      "theme": "iubire de vacanță",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "În vacanță, cu tine\nSunt liber, fără griji\nSuntem doi, într-un loc\nÎmpreună, cu așteptarea\n\nÎn noapte, cu lumina\nSunteti doi, într-un vis\nÎn zori, cu așteptarea\nSunteti doi, într-un iubire\n\nÎn vacanță, cu tine\nSunt liber, fără griji\nSuntem doi, într-un loc\nÎmpreună, cu așteptarea\n\nÎn vacanță, cu tine\nSunt liber, fără griji\nSuntem doi, într-un loc\nÎmpreună, cu așteptarea"
+    },
+    {
+      "id": 25,
+      "model": "llama-3.2-3b",
+      "prompt": "Mi-ai putea scrie, cu 11 silabe pe vers, 4 versuri cu rimă încrucișată, despre un tren care pleacă din gară și cineva rămâne pe peron?",
+      "theme": "tren care pleacă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "În gară, trenul pleacă cu viteză,\nLăsând în urmă, cu tristețe,\nO persoană, care rămâne,\nÎn umbra, cu gânduri grele."
+    },
+    {
+      "id": 26,
+      "model": "llama-3.2-3b",
+      "prompt": "Aș vrea o strofă mai amplă despre regret: 8 versuri, două catrene cu rimă încrucișată, 10 silabe.",
+      "theme": "regret",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 10
+      },
+      "output": "Regretul este o emoție dură,\ncare ne pune în fruntea timpului,\no amintire care ne răpe,\ndin viața noastră, fără să putem\ns-o revină, s-o împărtășim,\ndar într-adevăr, el ne rămâne,\no amintire care ne răpe.\n\nÎntr-un trecut, am făcut erori,\ncare au schimbat cursul vieții,\ndar acum, într-un moment de regret,\nmă întreb ce ar fi putut fi,\ndacă ar fi făcut altceva,\ndar viața este plină de \"ce ar fi\",\ndar nu putem să revină,\nsă împărtășim, să împărtășim."
+    },
+    {
+      "id": 27,
+      "model": "llama-3.2-3b",
+      "prompt": "Ceva amuzant despre cafeaua de dimineață, fără de care nu funcționez, AABB, 8 silabe, un refren de 4 versuri.",
+      "theme": "cafea de dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Ceva amuzant despre cafeaua de dimineață:\n\nCafeaua, o prietenă a mea,\nFără ea, eu nu pot face nimic.\nA mă trezește, a mă încântă,\nA mă face să mă simt viu și frumos.\n\nRefren:\nCafeaua, cafeaua, o sursă de viață,\nFără ea, eu sunt o persoană pierdută."
+    },
+    {
+      "id": 28,
+      "model": "llama-3.2-3b",
+      "prompt": "Mă întâlnesc cu un prieten după 10 ani. Scrie-mi o strofă despre revedere, 4 versuri, ABBA, 8 silabe.",
+      "theme": "revedere",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În zilele trecute, am uitat\nTimpul a fugit, am crescut\nPrieteniile noastre, strălucite\nÎn amintiri, am răsărit"
+    },
+    {
+      "id": 29,
+      "model": "llama-3.2-3b",
+      "prompt": "7 silabe pe vers, rimă încrucișată, 4 versuri despre păsări și zbor.",
+      "theme": "zbor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "În pădurea verde, unde soarele strălucește,\npăsările zbură, cu aripile lor frumoase.\nEi zbură în sus, cu vântul la spate,\nși se pierd în cer, cu frumusețea lor.\n\nEi zbură peste munte, peste văi și pădure,\nși se bucură de libertatea lor.\nEi zbură cu aripile lor, cu vântul la spate,\nși se pierd în cer, cu frumusețea lor.\n\nEi zbură peste râuri, peste lacuri și mări,\nși se bucură de libertatea lor.\nEi zbură cu aripile lor, cu vântul la spate,\nși se pierd în cer, cu frumusețea lor.\n\nEi zbură în sus, cu aripile lor frumoase,\nși se bucură de libertatea lor.\nEi zbură peste munte, peste văi și pădure,\nși se pierd în cer, cu frumusețea lor."
+    },
+    {
+      "id": 30,
+      "model": "llama-3.2-3b",
+      "prompt": "Vreau un refren melancolic, 4 versuri, ABAB, 10 silabe, de toamnă, cu ploaie la geam.",
+      "theme": "ploaie de toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Îi voi scrie un refren melancolic pentru tine:\n\nToamna se sparge, plină de tristețe,\nPloaia cade, geamul se umplă cu vânt.\nCântecele se stinge, liniștea este,\nÎn umbra noaptea, gândurile merg.\n\nSper că te place!"
+    },
+    {
+      "id": 31,
+      "model": "llama-3.2-3b",
+      "prompt": "Poți scrie despre un oraș vechi, 6 versuri, rimă împerecheată, 10 silabe, cu străzi de piatră?",
+      "theme": "oraș vechi",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "output": "În orașul vechi, străzile de piatră,\nCălătorii se mișcă cu pasul larg,\nPovestea istoriei se ascunde în ziduri,\nCăldură și frumusețe, o adevărată bani,\nÎn fiecare turn, o istorie așteptată,\nOrașul vechi, un mister așteptat."
+    },
+    {
+      "id": 32,
+      "model": "llama-3.2-3b",
+      "prompt": "Refren de dans, să se simtă ritmul, 7 silabe, 4 versuri, AABB, tempo alert.",
+      "theme": "dans",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Vreau să împărtășesc cu tine o melodie care îți va face să te simți în ritmul și să te relaxezi. Aici este o melodie care îți va face să te simți alert și energizat:\n\n\"Refren de dans, să se simtă ritmul,\nÎnchiză-ți ochii, să te simți liber.\nÎntr-un luptă, să te simți în vârstă,\nÎntr-un pas, să te simți în libertate.\"\n\nAceastă melodie are 7 silabe în fiecare vers, cu un ritm alert și energizant. Acesta este un refren de dans care îți va face să te simți în ritmul și să te relaxezi."
+    },
+    {
+      "id": 33,
+      "model": "llama-3.2-3b",
+      "prompt": "Îmi place cineva care nu mă vede. Poți scrie 4 versuri, rimă îmbrățișată, 11 silabe, despre o iubire neîmpărtășită?",
+      "theme": "iubire neîmpărtășită",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "Îmi place cineva care nu mă vede,\nÎmi place să îmi imaginez viitorul,\nÎmi place să îmi imaginez tine,\nÎmi place să îmi imaginez neîmpărtășire."
+    },
+    {
+      "id": 34,
+      "model": "llama-3.2-3b",
+      "prompt": "O strofă ABAB, 4 versuri, 8 silabe, optimistă, despre primăvară, când se trezește totul.",
+      "theme": "primăvară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Primăvara se trezește,\nAvea zăvorât, acum este frumos,\nSărbători de iarnă, acum este,\nCântece de primăvară, totul este."
+    },
+    {
+      "id": 35,
+      "model": "llama-3.2-3b",
+      "prompt": "Tocmai m-am mutat și o iau de la zero. Un refren de 4 versuri despre asta, rimă AABB, 10 silabe.",
+      "theme": "început nou",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Închiză toate porțile,\nÎnchiză toate ușile,\nÎnchiză toate porțile,\nÎnchiză toate ușile,\nÎnchiză toate porțile,\nÎnchiză toate ușile,\nÎnchiză toate porțile,\nÎnchiză toate ușile,\nÎnchiză toate porțile,\nÎnchiză toate ușile."
+    },
+    {
+      "id": 36,
+      "model": "llama-3.2-3b",
+      "prompt": "Aș vrea, în 8 silabe pe vers și 8 versuri, făcute din două catrene cu rimă încrucișată, o strofă cu amintiri de la țară.",
+      "theme": "amintiri de la țară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "output": "În țara mea, unde soarele arde\nCu flori de trandafiri, frumoase și bune\nÎn păduri verzi, unde vânzătorii\nCu mătănii și cu smântână, vindecări\n\nÎn orașe strălucite, unde se străjuiește\nCu străzile pline de viață, de frumos și de bine\nÎn casele noastre, unde se găzduiește\nCu familii și prietenii, dragoste și bucurie"
+    },
+    {
+      "id": 37,
+      "model": "llama-3.2-3b",
+      "prompt": "Scrie un refren despre telefonul care nu mai sună de când ne-am despărțit. 4 versuri, ABAB, 10 silabe, ton trist.",
+      "theme": "telefon care nu sună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Refren:\n\nTelefonul meu, în silență stă\nCând ne-am despărțit, nu mai sună\nCăutând răspuns, dar nici un sunet\nȘi întristarea, în mine se răsune"
+    },
+    {
+      "id": 38,
+      "model": "llama-3.2-3b",
+      "prompt": "Hai să facem 4 versuri, rimă AABB, 8 silabe, despre stele și noapte.",
+      "theme": "stele și noapte",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În noapte, stelele strălucesc,\nAurorii lor, pe cerul scânteie.\nNoaptea, ocazii de gândire,\nStelele, un mister, ne așteaptă."
+    },
+    {
+      "id": 39,
+      "model": "llama-3.2-3b",
+      "prompt": "Mă ajuți să scriu despre dor? 6 versuri, rimă încrucișată, 8 silabe.",
+      "theme": "dor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "output": "Îmi place să te ajut!\n\nAici este o versiune de 6 versuri cu rimă încrucișată, 8 silabe:\n\n1. Dorul meu este un flacăr\n2. Care arde în inimă\n3. Căutând răspunsuri\n4. În lumea care mă înconjoară\n5. Dar nu găsesc niciodată\n6. Răspunsul la dorul meu"
+    },
+    {
+      "id": 40,
+      "model": "llama-3.2-3b",
+      "prompt": "Track de hip-hop despre cartierul în care am crescut. Flow alert, refren de 4 versuri, rimă împerecheată, 11 silabe.",
+      "theme": "cartier",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "Îmi amintesc de cartierul meu, un loc de dragoste,\n unde am crescut, într-un mediu plin de viață.\nA fost un loc de aventuri, de descoperiri,\n unde am învățat să trăiesc, să iubeșc și să sufer.\n\nPentru mine, cartierul a fost un loc de refugiu,\n unde am putut fi eu însuși, fără pretenții.\nA fost un loc de libertate, de expresie,\n unde am putut să văd lumea sub o perspectivă nouă.\n\nDar, deși a fost un loc de dragoste, a fost și un loc de suferință,\n unde am trebuit să lupt pentru tot ce am avut.\nA fost un cartier de bătălii, de lupte,\n unde am trebuit să mă apăr pentru tot ce am avut.\n\nÎnsă, în fine, a fost un loc de învățare,\n unde am învățat să trăiesc, să iubeșc și să sufer.\nA fost un cartier de viață, de experiențe,\n care m-a ajutat să mă dezvolt și să mă îmbunătățesc."
+    },
+    {
+      "id": 41,
+      "model": "llama-3.2-3b",
+      "prompt": "O seară de iarnă lângă sobă. Strofă de 4 versuri, rimă îmbrățișată, 8 silabe, poți?",
+      "theme": "seară de iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "O seară de iarnă, lângă sobă,\nCântecele de iarnă, îmi vine să zâmă,\nFocul arde, îmi dă frânghie,\nÎn noaptea de iarnă, eu mă simt bine."
+    },
+    {
+      "id": 42,
+      "model": "llama-3.2-3b",
+      "prompt": "Mi-a promis că rămâne și a plecat. Un refren despre promisiuni încălcate, ABAB, 7 silabe, 4 versuri.",
+      "theme": "promisiune încălcată",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Promisiunea pierdută\n\nÎntr-un râs, promisiunea\nÎntr-un râs, promisiunea\nPierdută, fără să aibă\nÎntr-un râs, promisiunea"
+    },
+    {
+      "id": 43,
+      "model": "llama-3.2-3b",
+      "prompt": "Scrie-mi o strofă de dragoste, 4 versuri, rimă ABAB. Cu silabele te las pe tine.",
+      "theme": "dragoste",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4
+      },
+      "output": "În noapte, când steau stele,\nTine mâinile, frumoasă și caldă,\nÎmi dădă un gând, un vis, un soar,\nÎn tine, dragostea mea se râde."
+    },
+    {
+      "id": 44,
+      "model": "llama-3.2-3b",
+      "prompt": "8 silabe pe vers: un refren despre vară, restul îți las ție.",
+      "theme": "vară",
+      "expected_constraints": {
+        "syllables_per_line": 8
+      },
+      "output": "În vară, soarele arde,\nPământul se încălzește,\nPlantele floresc,\nIeșim din casă,\nPentru a ne bucura,\nDe frumusețea naturii,\nCăldură și lumea,\nSunt toate frumoase."
+    },
+    {
+      "id": 45,
+      "model": "llama-3.2-3b",
+      "prompt": "Poți scrie ceva despre ploaie? Să aibă rimă împerecheată, atât.",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB"
+      },
+      "output": "Ploaia, o plină de mireasă,\nÎnchide lumea, cu un zâmbet amăgâtă.\nEa vine, ca un vis, cu un sunet de scânci,\nȘi îi umple, oamenilor, gândul și tristețea.\n\nCu ghețari, care se desfășoară, ca un râs,\nȘi unor pietre, care se desprind, ca un plâns.\nEa se scurge, ca un lac, care se usucă,\nȘi lăsa, în urmă, o lume, plină de tristețe.\n\nDar, și în ploaie, există o frumusețe,\nO frumusețe, care se ascunde, sub apă.\nEa este, o plină de mireasă, care se deschide,\nȘi o lume, plină de viață, care se revigorează.\n\nAșadar, ploaia, nu este doar o plină de tristețe,\nCi și o plină de frumusețe, care se deschide.\nȘi, dacă o să aștept, ploaia, să se umple,\nȘi să"
+    },
+    {
+      "id": 46,
+      "model": "llama-3.2-3b",
+      "prompt": "Dă-mi 6 versuri despre libertate.",
+      "theme": "libertate",
+      "expected_constraints": {
+        "lines": 6
+      },
+      "output": "În libertate, sufletul se desfășoară\nFără limite, el se poate răsări\nÎn libertate, inimă se deschide\nPentru tot ceea ce este posibil\n\nÎn libertate, minte se desface\nFără frică, ea se poate exprima\nÎn libertate, suflet se împărtășește\nCu toți ceilalți, într-un univers comun"
+    },
+    {
+      "id": 47,
+      "model": "llama-3.2-3b",
+      "prompt": "Un refren pop despre prietenie, ceva cu ritm alert.",
+      "theme": "prietenie",
+      "expected_constraints": {},
+      "output": "Îmi vine în minte un refren pop despre prietenie cu ritm alert:\n\n\"Cu tine, totul este posibil\nÎnchizăm ochii, ne uităm la tine\nÎn momentul în care ne simțim\nSă ne încredem, să ne încredem în tine\"\n\nAcest refren are un ritm alert și o melodie ușor de amintit, care se potrivește perfect cu un cântec despre prietenie."
+    },
+    {
+      "id": 48,
+      "model": "llama-3.2-3b",
+      "prompt": "scrie ceva despre mare",
+      "theme": "mare",
+      "expected_constraints": {},
+      "output": "Marea este un termen care se referă la o vastă zonă a oceanului, care se caracterizează prin o adâncime considerabilă și o suprafață mare. În general, marea este definită ca fiind o zonă a oceanului care are o adâncime de peste 200 de metri și o suprafață de peste 1.000 de kilometri pătrat.\n\nMarea are o importanță ecologică și economică semnificativă, deoarece este un habitat important pentru o varietate de specii de animale marine, precum și un sursă de resurse naturale, cum ar fi pește, crustacee și hidrocarburi.\n\nÎn ceea ce privește geografia, marea se caracterizează prin o suprafață irregulară, cu insule, muni și baraje. În ceea ce privește climatul, marea are o influență semnificativă asupra temperaturilor și a precipitațiilor în zonele înconjurătoare.\n\nÎn istorie, marea a jucat un rol important în navigația maritimă și în comerțul internațional, fiind un pasaj important pentru navele comerciale și militare"
+    },
+    {
+      "id": 49,
+      "model": "llama-3.2-3b",
+      "prompt": "Vreau ceva trist, 4 versuri, 10 silabe, fără rimă anume.",
+      "theme": "tristețe",
+      "expected_constraints": {
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Poemul tău trist:\n\nSunt singur în noaptea\nFără nimeni să-mi spună\nCărora îi am nevoie\nÎn această lume friguroasă"
+    },
+    {
+      "id": 50,
+      "model": "llama-3.2-3b",
+      "prompt": "La apus, pe faleză. Un refren despre o plimbare de-a lungul mării, 4 versuri, ABBA, 7 silabe.",
+      "theme": "plimbare pe faleză",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Într-un cadru de frumusețe,\nMării, plin de mări,\nPeste apă, pe faleza,\nPământul, plin de mări."
+    },
+    {
+      "id": 1,
+      "model": "phi-3-mini",
+      "prompt": "4 versuri, rimă încrucișată, 8 silabe: un refren trist despre o dragoste care s-a terminat. Mă ajuți?",
+      "theme": "dragoste tristă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Într-o zi de iul,\n\nDragostea mea a terminat,\n\nSunt trist, încrucișată,\n\nSunt trist, încrucișată,\n\nSunt trist, încrucișată,\n\nSunt trist, încrucișată,\n\nSunt trist, încrucișată,\n\nSunt trist, încrucișată."
+    },
+    {
+      "id": 2,
+      "model": "phi-3-mini",
+      "prompt": "Fac o piesă pop pentru vară și am nevoie de o strofă, 4 versuri cu rimă AABB și 10 silabe pe vers, despre cum se termină vacanța. Să aibă ritm alert.",
+      "theme": "sfârșit de vară",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "În prima zi, vreau să mănunțesc într-o călătorie,\nCălătorie care își desenează mea vacanță.\nPentru a vedea lumea în care mănunța,\nÎntr-o călătorie, vreau să mănunțesc într-o călătorie.\n\nÎntr-o călătorie, vreau să mănunțesc într-o călătorie,\nCălătorie care își desenează mea vacanță.\nPentru a vedea lumea în care mănunța,\nÎntr-o călătorie, vreau să mănunțesc într-o călătorie.\n\nCălătorie, vreau să mănunțesc într-o călătorie,\nCălătorie care își desenează mea vacanță.\nPentru a vedea lumea în care mănunța,\nÎntr-o călătorie, vreau să mănunțesc într-o călătorie.\n\nÎ"
+    },
+    {
+      "id": 3,
+      "model": "phi-3-mini",
+      "prompt": "Rimă îmbrățișată, 4 versuri, 8 silabe. Tema: ploaia.",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Ploaia, vrem să ne văd,\n\nSă-mi spun, vrem să ne vad.\n\nPloaia, vrem să ne vad,\n\nSă-mi spun, vrem să ne vad."
+    },
+    {
+      "id": 4,
+      "model": "phi-3-mini",
+      "prompt": "Sunt plecat de acasă de 2 ani. Aș vrea un refren de 4 versuri despre dorul de casă, cu rimă încrucișată, și să fie în jur de 10 silabe fiecare vers.",
+      "theme": "dor de casă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "1. Casa cu o lume mai mare,\n   Către noi, cât și noi,\n   Într-o lume de mister,\n   Către noi, cât și noi.\n\n2. Într-o lume de mister,\n   Către noi, cât și noi,\n   Casa cu o lume mai mare,\n   Către noi, cât și noi.\n\n3. Către noi, cât și noi,\n   Într-o lume de mister,\n   Casa cu o lume mai mare,\n   Către noi, cât și noi.\n\n4. Către noi, cât și noi,\n   Într-o lume de mister,\n   Casa cu o lume mai mare,\n   Către noi, cât și noi.\n\n5. Într-o lume de mister,\n   Către noi, cât și noi,\n   Casa cu o lume mai mare,\n   Către noi, cât și noi.\n\n6. Către noi, cât și noi,\n   Într-o lume de mister,\n   Casa cu o lume mai mare,\n   C"
+    },
+    {
+      "id": 5,
+      "model": "phi-3-mini",
+      "prompt": "Vreau o strofă din copilărie, cu bicicleta, vara la bunici, genul ăsta. 6 versuri, rimă AABBCC, 8 silabe.",
+      "theme": "copilărie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "output": "Într-o zi de vremea,\n\nCălătorii cu bicicleta,\n\nPentru a se vedea,\n\nPe stradă, pe văgăna,\n\nCând vreau să-ți spui,\n\nCă genul ăsta este frumos."
+    },
+    {
+      "id": 6,
+      "model": "phi-3-mini",
+      "prompt": "Pentru trupa mea am nevoie de un refren cu energie, 4 versuri și 8 silabe, rimă împerecheată, despre libertate.",
+      "theme": "libertate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Pentru a crea o poezie care să contine o refren cu energie, 4 versuri și 8 silabe, și să fie împerecheată, trebuie să gresează într-o temă care să reflectă liberația. Poeziele de exemplu, vrem să spunem despre liberația în dreptul al viaţei sau într-un context diferent, cum ar fi liberația în artă sau în viața.\n\n\nVersul 1:\n\nSuntem vitezii în căutarea liberă,\n\nÎntr-o lume ce ne-a întâmplat,\n\nÎntr-o zi, într-o zi,\n\nÎntr-o zi, într-o zi,\n\nÎntr-o zi, într-o zi,\n\nÎntr-o zi, într-o zi,\n\nÎntr-o zi, într-o zi,\n\nÎntr-o zi, într-o zi,\n\n\nVersul 2:\n\nÎntr-o zi, într-o zi,\n\nSuntem vitezii în căutarea liberă,"
+    },
+    {
+      "id": 7,
+      "model": "phi-3-mini",
+      "prompt": "Mi-a plecat iubita. Dă-mi te rog o strofă despre despărțire, ABAB, 4 versuri, 11 silabe, să doară puțin.",
+      "theme": "despărțire",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "O noapte frumoasă,\n\nVântul iubitele,\n\nSă-mi spun, vreo,\n\nÎntr-o sfârșit,\n\nSă-mi spun, vreo,\n\nÎntr-o sfârșit,\n\nCă vrem să-ți desprăcească,\n\nÎntr-o sfârșit,\n\nCă vrem să-ți desprăcească,\n\nÎntr-o sfârșit,\n\nCă vrem să-ți desprăcească,\n\nÎntr-o sfârșit."
+    },
+    {
+      "id": 8,
+      "model": "phi-3-mini",
+      "prompt": "Scrie-mi 4 versuri cu rimă îmbrățișată, 10 silabe, ceva despre orașul noaptea, cu luminile și străzile goale. Ton nostalgic.",
+      "theme": "oraș noaptea",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "1. Noaptea în oraș, luceafărul mărturizând,\n   Luminile străzile, încă vreo frumos,\n   Către noi, într-o zi de nostru,\n   Într-o zi de nostru, într-o zi de nostru.\n\n2. Străzile noastre, cu luminile încă,\n   Să ne spună, într-o zi de nostru,\n   Noaptea, frumos și mărturizând,\n   Într-o zi de nostru, într-o zi de nostru.\n\n3. Într-o zi de nostru, într-o zi de nostru,\n   Noaptea, frumoasă și mărturizând,\n   Luminile străzile, încă vreo frumos,\n   Luceafărul mărturizând, într-o zi de nostru.\n\n4. Într-o zi de nostru, într-o zi de nostru,\n   Luminile străzile, încă vreo frumos,\n   Noaptea"
+    },
+    {
+      "id": 9,
+      "model": "phi-3-mini",
+      "prompt": "Cânt la o petrecere sâmbătă și caut un refren vesel despre iubire. Ritm cât mai alert, 4 versuri, rimă AABB, 8 silabe.",
+      "theme": "dragoste fericită",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În sâmbătă, vreau să cânte:\n\n\nSuntem câine, într-adevăr,\n\nÎntr-o pădure, într-o văzduină,\n\nCântec de iubire, vreau să mănânc,\n\nSă ne spunem, cu vremuri, să ne mâncăm.\n\n\nSă ne spunem, cu vremuri, să ne mâncăm,\n\nCântec de iubire, vreau să mănânc,\n\nSuntem câine, într-adevăr,\n\nÎntr-o pădure, într-o văzduină."
+    },
+    {
+      "id": 10,
+      "model": "phi-3-mini",
+      "prompt": "Mă ajuți cu o strofă despre toamnă? 8 versuri, 8 silabe la fiecare, făcută din două catrene cu rimă încrucișată.",
+      "theme": "toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "output": "1. În toamnă, vreau să mă întări,\n   Că ciocnă, vreau să mă întări,\n   Că vremea, vreau să mă întări,\n   Că vremea, vreau să mă întări.\n\n2. În toamnă, vreau să mă întări,\n   Că vremea, vreau să mă întări,\n   Că vremea, vreau să mă întări,\n   Că vremea, vreau să mă întări.\n\n3. În toamnă, vreau să mă întări,\n   Că vremea, vreau să mă întări,\n   Că vremea, vreau să mă întări,\n   Că vremea, vreau să mă întări.\n\n4. În toamnă, vreau să mă întări,\n   Că vremea, vreau să mă întări,\n   Că vremea, vreau să mă întări,\n   Că vremea, vreau să mă întări.\n\n5."
+    },
+    {
+      "id": 11,
+      "model": "phi-3-mini",
+      "prompt": "Un refren despre prietenie, pentru cel mai bun prieten al meu, 7 silabe pe vers, 4 versuri, ABAB. E cadou.",
+      "theme": "prietenie",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Povestea prietenului meu,\n\nCătre tine, prietenul meu,\n\nCătre tine, prietenul meu,\n\nCătre tine, prietenul meu."
+    },
+    {
+      "id": 12,
+      "model": "phi-3-mini",
+      "prompt": "Mă simt cam singur în ultima vreme. Poți să-mi scrii despre asta, cu rimă împerecheată, 4 versuri de 10 silabe?",
+      "theme": "singurătate",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "În acest moment, mă simt singur și încetător.\n\nPentru a găsi versuri de 10 silabe, trebuie să spunem o propoziție care să contine 10 cuvinte, fiecare cu 10 caractere.\n\n1. În acest moment, mă simt singur și încetător.\n2. În acele timp, mă simt singur și încetător, într-adevăr.\n3. În acest moment, mă simt singur și încetător, fie ca am încălcat, fie că am încălcat.\n4. În acest moment, mă simt singur și încetător, fie că am încălcat, fie că am încălcat."
+    },
+    {
+      "id": 13,
+      "model": "phi-3-mini",
+      "prompt": "Hai cu o strofă despre iarnă, ceva liniștit, cu rimă îmbrățișată, 4 versuri și 8 silabe.",
+      "theme": "iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În iarnă, vrem să ne încălcăm,\n\nCăruța se înlănsește,\n\nVandul se află pe picioare,\n\nSăptămânje se încălcește.\n\n\nIarnă, vrem să ne încălcăm,\n\nCăruța se înlănsește,\n\nVandul se află pe picioare,\n\nSăptămânje se încălcește."
+    },
+    {
+      "id": 14,
+      "model": "phi-3-mini",
+      "prompt": "Track de dance, ritm foarte alert. Refren despre o noapte în club: AABB, 8 silabe, 4 versuri.",
+      "theme": "noapte în club",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În club, într-adevăr moment, se întărește un ritm foarte alert, care se aduce la un mod de danță foarte intens. Acest tip de danță este caracterizat prin un ritmul repetitiv, care se folosește un pattern de versuri AABB, ceea ce înseamnă că primele două versuri sunt similare, iar a trecelea versul este diferit, reflectând un schimbare în muzică sau într-o schimbare în danță.\n\nDupă o noapte, clubul este plin de gheor și de gheor, iar muzica aflată într-o loc din interiorul clubului se aduce la oamenii, care se întărește cu echipa de danțari. Acest tip de danță este foarte popular într-o zi, deoarece este foarte eficient pentru a crea un ambiționat și foarte intensul într-un loc de întăire Mare.\n\nDupă ce se întâmplă un ritm foarte alert, oamenii se întâmplă cu o danță foarte intensă, ceea ce se aduce la un mod foarte intens într-un loc de întăire"
+    },
+    {
+      "id": 15,
+      "model": "phi-3-mini",
+      "prompt": "Cum ai scrie despre cât de repede trece timpul? 6 versuri cu rimă încrucișată, 10 silabe.",
+      "theme": "trecerea timpului",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "output": "În această întrebare, vrem să spunem despre cât de repede trece timpul, iar pentru a adăugi versuri cu rimă încrucișată, trebuie să folosim structura gramaticală care să permite încrucțire a rime, astfel cum sunt obiceiul de a avea 10 silabe în fiecare vers.\n\n1. Când într-adevăr timp, vreau să mănânc pâinele încrucișată.\n2. Peste peste peste timp, vreau să mănânc pâinele încrucișată.\n3. Într-adevăr timp, vreau să mănânc pâinele încrucișată.\n4. Peste peste peste timp, vreau să mănânc pâinele încrucișată.\n5. Într-adevăr timp, vreau să mănânc pâinele încrucișată.\n6. Peste peste peste timp, vreau să mănânc pâinele încrucișată.\n\nAcum, vrem să aducmă versuri cu"
+    },
+    {
+      "id": 16,
+      "model": "phi-3-mini",
+      "prompt": "Caut un refren care să dea speranță cuiva care trece printr-o perioadă grea. ABAB, 4 versuri, 8 silabe.",
+      "theme": "speranță",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Într-o perioadă de timp,\n\nSperanță se trăiește,\n\nÎntr-o zadă de muncă,\n\nSperanță se vărite."
+    },
+    {
+      "id": 17,
+      "model": "phi-3-mini",
+      "prompt": "Ador marea. Scrie-mi o strofă ABBA de 4 versuri despre ea, cu 11 silabe.",
+      "theme": "mare",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "În marea, vestele sunt de fiecare,\n\nSă-ți vedea, cât ea se înlănsește.\n\nSă-ți spui, cât ea se înlănsește,\n\nSă-ți spui, cât ea se înlănsește.\n\n\nÎntr-o zi, ea se întăsește,\n\nSă-ți spui, cât ea se înlănsește.\n\nSă-ți spui, cât ea se înlănsește,\n\nSă-ți vedea, cât ea se înlănsește."
+    },
+    {
+      "id": 18,
+      "model": "phi-3-mini",
+      "prompt": "E ziua mamei săptămâna viitoare, 4 versuri, rimă încrucișată, 10 silabe, ceva emoționant pentru ea.",
+      "theme": "mama",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "În acea zi, vreau să mănunțe să vă spunem o poezie încrucișată, cu 4 versuri, 10 silabe, care să transmite o emoție intensă.\n\nVersul 1:\n\nSăptămânje încrucișată,\n\nSilabe într-adevăr,\n\nEmoție într-o vremuri,\n\nPoetul într-o zadă.\n\nVersul 2:\n\nCătre lumina,\n\nSăptămânje încrucișată,\n\nEmoție într-o vremuri,\n\nPoetul într-o zadă.\n\nVersul 3:\n\nSăptămânje încrucișată,\n\nSilabe într-adevăr,\n\nEmoție într-o vremuri,\n\nPoetul într-o zadă.\n\nVersul 4:\n\nCătre lumina,\n\nEmoție într-o vremuri,\n\nPoetul într-o zadă,\n\nSăptămânje încrucișată."
+    },
+    {
+      "id": 19,
+      "model": "phi-3-mini",
+      "prompt": "Pentru un rock: refren despre un drum lung făcut cu mașina. Rimă împerecheată, 8 silabe, 4 versuri.",
+      "theme": "drum lung",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Pentru un drum lung,\n\nMașina de făcut,\n\nSilabe 8, versuri 4,\n\nCăutați drum, lucrează."
+    },
+    {
+      "id": 20,
+      "model": "phi-3-mini",
+      "prompt": "Poți să-mi dai despre o dimineață frumoasă 4 versuri, ton luminos, rimă ABAB, 7 silabe?",
+      "theme": "dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Într-o dimineață frumoasă, lumina se plânge pe picioarele,\nSă-ți vedea cu ochii, o spațiu deplin și plin de lumiere.\nVându-te în căile de flori, în cărăcuitoarele de pasăre,\nCătre o veste de verde, într-o loc deplin și plin de lumiere.\n\nSă-ți vedea pe picioarele, o spațiu deplin și plin de lumiere,\nSă-ți vedea cu ochii, o dimineață frumoasă, într-o loc deplin și plin de lumiere.\nVându-te în căile de flori, în cărăcuitoarele de pasăre,\nVându-te în căile de flori, în cărăcuitoarele de pasăre, într-o loc deplin și plin de lumiere."
+    },
+    {
+      "id": 21,
+      "model": "phi-3-mini",
+      "prompt": "Mi-e dor de satul bunicilor. 6 versuri, rimă împerecheată, câte 8 silabe, te rog, despre locul ăla.",
+      "theme": "bunici și sat",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "output": "În lumea de satul bunicilor,\n\nCă trebuie să înțelegem\n\nLocul ălea,\n\nCă am vând un pictură,\n\nCă am vând un pictură,\n\nCă am vând un pictură."
+    },
+    {
+      "id": 22,
+      "model": "phi-3-mini",
+      "prompt": "Am un vis pe care nu l-am împlinit. Refren, 4 versuri, rimă îmbrățișată, 10 silabe, despre asta.",
+      "theme": "vis neîmplinit",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Am învățat că există o varietate de perechi de limbă care se aduce la limba română, cum ar fi limba limba de la pe care am învățat. Acest lucru se referă la limba limba de la, cum ar fi limba limba de la, cum ar fi limba limba de la, cum ar fi limba limba de la, cum ar fi limba limba de la."
+    },
+    {
+      "id": 23,
+      "model": "phi-3-mini",
+      "prompt": "Strofă despre luna de pe cer, ceva romantic. ABAB, 8 silabe, 4 versuri.",
+      "theme": "lună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În luna de pe cer, lumina se înlănză,\n\nScurte vestele, vestele de vânt.\n\nSunetul, vestele de vânt,\n\nScurte vestele, vestele de vânt."
+    },
+    {
+      "id": 24,
+      "model": "phi-3-mini",
+      "prompt": "4 versuri, rimă AABB, 10 silabe, ritm alert: un refren pop despre o iubire de vacanță, ca într-o melodie de radio.",
+      "theme": "iubire de vacanță",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Un refren pop despre o iubire de vacanță, ca într-o melodie de radio,\n\nSunii lumii, vându-te în vreo spațiu,\n\nCătre marele, într-o loc de asta,\n\nSă-ți spui, cu drag, cât mai bine.\n\n\nÎntr-o lume de plin de lumina,\n\nÎntr-o loc de asta, împreună,\n\nSă-ți spui, cu drag, cât mai bine,\n\nSă-ți spui, cu drag, cât mai bine."
+    },
+    {
+      "id": 25,
+      "model": "phi-3-mini",
+      "prompt": "Mi-ai putea scrie, cu 11 silabe pe vers, 4 versuri cu rimă încrucișată, despre un tren care pleacă din gară și cineva rămâne pe peron?",
+      "theme": "tren care pleacă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "Într-o zi de fericire,\nTrenul de pe gară a trecut,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren, într-o zi de fericire,\nCătre un tren,"
+    },
+    {
+      "id": 26,
+      "model": "phi-3-mini",
+      "prompt": "Aș vrea o strofă mai amplă despre regret: 8 versuri, două catrene cu rimă încrucișată, 10 silabe.",
+      "theme": "regret",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 10
+      },
+      "output": "Într-adevăr, vreau să spun,\n\nCă regretul meu este un nume,\n\nCă mă uita de cea cea cea mai bun,\n\nCă mă uita de cea cea mai bun.\n\n\nÎntr-o lume mai mare,\n\nCă mă uita de cea cea mai bun,\n\nCă mă uita de cea cea mai bun,\n\nCă mă uita de cea cea mai bun.\n\n\nCă mă uita de cea cea mai bun,\n\nCă mă uita de cea cea mai bun,\n\nCă mă uita de cea cea mai bun,\n\nCă mă uita de cea cea mai bun.\n0"
+    },
+    {
+      "id": 27,
+      "model": "phi-3-mini",
+      "prompt": "Ceva amuzant despre cafeaua de dimineață, fără de care nu funcționez, AABB, 8 silabe, un refren de 4 versuri.",
+      "theme": "cafea de dimineață",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În ceasul dimineaței,\n\nCafenea de pe stradă,\n\nSănătate și amândre,\n\nNu-i decizion să aibă.\n\n\nÎntr-o zi de viner,\n\nCafenea de pe stradă,\n\nSănătate și amândre,\n\nNu-i decizion să aibă."
+    },
+    {
+      "id": 28,
+      "model": "phi-3-mini",
+      "prompt": "Mă întâlnesc cu un prieten după 10 ani. Scrie-mi o strofă despre revedere, 4 versuri, ABBA, 8 silabe.",
+      "theme": "revedere",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Într-o zi de vreme,\n\nPrietenul meu, vă mă întâlnesc.\n\nCă timpul a trecut,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,\n\nÎntr-o zi de vreme,"
+    },
+    {
+      "id": 29,
+      "model": "phi-3-mini",
+      "prompt": "7 silabe pe vers, rimă încrucișată, 4 versuri despre păsări și zbor.",
+      "theme": "zbor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Încrucișată, încrucișată,\n\nPăsări în perechi, în perechi,\n\nZborul într-o pădure,\n\nPăsări încrucișate, încrucișate.\n\n\nPăsări în perechi, în perechi,\n\nZborul într-o pădure, într-o pădure,\n\nPăsări încrucișate, încrucișate,\n\nZborul într-o pădure, într-o pădure."
+    },
+    {
+      "id": 30,
+      "model": "phi-3-mini",
+      "prompt": "Vreau un refren melancolic, 4 versuri, ABAB, 10 silabe, de toamnă, cu ploaie la geam.",
+      "theme": "ploaie de toamnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Într-o zadă de toamnă,\n\nPloaie se încălcă,\n\nSă-ți văd pe pereche,\n\nCă trebuie să vă măsura."
+    },
+    {
+      "id": 31,
+      "model": "phi-3-mini",
+      "prompt": "Poți scrie despre un oraș vechi, 6 versuri, rimă împerecheată, 10 silabe, cu străzi de piatră?",
+      "theme": "oraș vechi",
+      "expected_constraints": {
+        "rhyme_scheme": "AABBCC",
+        "lines": 6,
+        "syllables_per_line": 10
+      },
+      "output": "Un oraș vechi, într-adevăr, a fost un loc de viață și lucrări,\nCătre piatră, într-adevăr, oamenii a fost într-adevăr părăslește.\nÎn acea oraș, lucrătorii și domnitori, își spun,\nÎntr-adevăr, că vrem să-ți spun, să-ți spun, să-ți spun, să-ți spun, să-ți spun, să-ți spun, să-ți spun, să-ți spun, să-ți spun.\n\nÎn acea oraș, lucrătorii și domnitori, își spun,\nÎntr-adevăr, că vrem să-ți spun, să-ți spun, să-ți spun, să-ți spun, să-ți spun, să-ți spun, să-ți spun, să-ți spun, să-ți spun.\n\nCătre piatră, într-adevăr, oamenii a fost într-adevăr părăslește,\nÎn acea oraș, lucrătorii și domnitori, își spun, să-ți spun"
+    },
+    {
+      "id": 32,
+      "model": "phi-3-mini",
+      "prompt": "Refren de dans, să se simtă ritmul, 7 silabe, 4 versuri, AABB, tempo alert.",
+      "theme": "dans",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Într-o poezie de simbol, vreau să-ți simtă într-o simțăție de adevărat, un ritm cu 7 silabe, 4 versuri, formatul AABB, cu un tempo alert.\n\nPoetul său vorbă:\n\nSă-ți simtă într-o simțăție de adevărat,\nCă ciocnă de drag, într-o zid de pietre,\nCă ciocnă de drag, într-o zid de pietre,\nSă-ți simtă într-o simțăție de adevărat.\n\nAcum, vreau să-ți simtă într-o simțăție de adevărat,\nCă ciocnă de drag, într-o zid de pietre,\nCă ciocnă de drag, într-o zid de pietre,\nSă-ți simtă într-o simțăție de adevărat.\n\nPoetul vorbește într-un ritm cu 7 silabe, 4 versuri, formatul AABB, cu un tempo alert, simțind că adevărat."
+    },
+    {
+      "id": 33,
+      "model": "phi-3-mini",
+      "prompt": "Îmi place cineva care nu mă vede. Poți scrie 4 versuri, rimă îmbrățișată, 11 silabe, despre o iubire neîmpărtășită?",
+      "theme": "iubire neîmpărtășită",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "1. Într-o zi de vreme, vreau să mă întreabăc pe măsurile,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când vreau să mă vadă,\n   Când"
+    },
+    {
+      "id": 34,
+      "model": "phi-3-mini",
+      "prompt": "O strofă ABAB, 4 versuri, 8 silabe, optimistă, despre primăvară, când se trezește totul.",
+      "theme": "primăvară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "În primăvara, vreau să mănunțesc într-o zadare de vreme,\nCând flori încetinți, și plângi-mă în veste.\nVisez să-ți vadă, într-o zadare de vreme,\nCând vremea începe să se întăsească."
+    },
+    {
+      "id": 35,
+      "model": "phi-3-mini",
+      "prompt": "Tocmai m-am mutat și o iau de la zero. Un refren de 4 versuri despre asta, rimă AABB, 10 silabe.",
+      "theme": "început nou",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Într-o zi de vreme,\n\nCătre măsura,\n\nCătre măsura,\n\nSunt într-o zadare.\n\n\nÎn acea zi,\n\nMăsura se înlănțește,\n\nÎn acea zi,\n\nMăsura se înlănțește."
+    },
+    {
+      "id": 36,
+      "model": "phi-3-mini",
+      "prompt": "Aș vrea, în 8 silabe pe vers și 8 versuri, făcute din două catrene cu rimă încrucișată, o strofă cu amintiri de la țară.",
+      "theme": "amintiri de la țară",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABCDCD",
+        "lines": 8,
+        "syllables_per_line": 8
+      },
+      "output": "Versul de pe 8 silabe și 8 versuri din două catrene cu rimă încrucișată, o strofă cu amintiri de la țară:\n\n1. Versul de 8 silabe:\n\n   În lumea de dragostea,\n   Cățile sunt încrucișate,\n   Către lumea de dragostea,\n   Către lumea de dragostea,\n   Către lumea de dragostea,\n   Către lumea de dragostea,\n   Către lumea de dragostea,\n   Către lumea de dragostea.\n\n2. Versuri de 8 silabe:\n\n   În lumea de dragostea,\n   Cățile sunt încrucișate,\n   Către lumea de dragostea,\n   Către lumea de dragostea,\n   Către lumea de dragostea,\n   Către lumea de dragostea,\n   Către lumea de dragostea,\n   Către lumea de dragostea.\n\n3. Strofa cu amintiri de la țară:\n\n   În lumea"
+    },
+    {
+      "id": 37,
+      "model": "phi-3-mini",
+      "prompt": "Scrie un refren despre telefonul care nu mai sună de când ne-am despărțit. 4 versuri, ABAB, 10 silabe, ton trist.",
+      "theme": "telefon care nu sună",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Într-o zi de mai jos,\n\nCătre tine, am vând,\n\nCătre tine, am vând,\n\nCătre tine, am vând,\n\nSunt într-o zi de mai jos,\n\nCătre tine, am vând,\n\nSunt într-o zi de mai jos,\n\nCătre tine, am vând,\n\nSunt într-o zi de mai jos,\n\nCătre tine, am vând,\n\nSunt într-o zi de mai jos,\n\nCătre tine, am vând."
+    },
+    {
+      "id": 38,
+      "model": "phi-3-mini",
+      "prompt": "Hai să facem 4 versuri, rimă AABB, 8 silabe, despre stele și noapte.",
+      "theme": "stele și noapte",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "1. Într-adevăr, stelele sunt o spațiu deplină,\n   Să-ți vedea, cât se întărește,\n   Cu luminile creștit și cu lumina noapte,\n   Într-adevăr, stelele sunt o spațiu deplină.\n\n2. Noaptea, stelele lumini cu lumină,\n   Să-ți vedea, cât se întărește,\n   Cu luminile creștit și cu lumina noapte,\n   Noaptea, stelele lumini cu lumină.\n\n3. Stelele, cu luminile creștit și cu lumina noapte,\n   Să-ți vedea, cât se întărește,\n   Într-adevăr, stelele sunt o spațiu deplină,\n   Stelele, cu luminile creștit și cu lumina noapte.\n\n4. Într-adevăr, stelele sunt o spațiu deplină,\n   Să-ți vedea, cât se întărește,\n   Cu luminile creștit și cu lumina noapte,"
+    },
+    {
+      "id": 39,
+      "model": "phi-3-mini",
+      "prompt": "Mă ajuți să scriu despre dor? 6 versuri, rimă încrucișată, 8 silabe.",
+      "theme": "dor",
+      "expected_constraints": {
+        "rhyme_scheme": "ABABAB",
+        "lines": 6,
+        "syllables_per_line": 8
+      },
+      "output": "1. Dorul meu, într-adevăr, este un lucru încrucișat,\n2. Silabele mele, încetări, sunt un nume încrucișat.\n3. Într-adevăr, dorul meu, este un nume încrucișat,\n4. Silabele mele, încetări, sunt un lucru încrucișat.\n5. Încetările mele, dorul meu, sunt un nume încrucișat,\n6. Lucru meu, dorul meu, este un nume încrucișat."
+    },
+    {
+      "id": 40,
+      "model": "phi-3-mini",
+      "prompt": "Track de hip-hop despre cartierul în care am crescut. Flow alert, refren de 4 versuri, rimă împerecheată, 11 silabe.",
+      "theme": "cartier",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB",
+        "lines": 4,
+        "syllables_per_line": 11
+      },
+      "output": "În lumea mea, într-adevăr,\n\nCătre cartierul, un nume de mare.\n\nCătre lui, un refren de 4 versuri,\n\nCătre me, un nume de mare.\n\n\nCătre lui, un nume de mare,\n\nCătre cartierul, un nume de mare.\n\nCătre me, un nume de mare,\n\nCătre lui, un nume de mare."
+    },
+    {
+      "id": 41,
+      "model": "phi-3-mini",
+      "prompt": "O seară de iarnă lângă sobă. Strofă de 4 versuri, rimă îmbrățișată, 8 silabe, poți?",
+      "theme": "seară de iarnă",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 8
+      },
+      "output": "Într-o zi de iarnă, vreau să mă întreabăc pe coltivarea și lucrurile.\n\nCând seara de iarnă începe,\nSă-mi spun că lucrurile sunt în picioare.\nColtivați către fructe și legume,\nÎntr-o zi, vreau să mă întreabăc pe lucrurile."
+    },
+    {
+      "id": 42,
+      "model": "phi-3-mini",
+      "prompt": "Mi-a promis că rămâne și a plecat. Un refren despre promisiuni încălcate, ABAB, 7 silabe, 4 versuri.",
+      "theme": "promisiune încălcată",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Într-o zi de iutate,\n\nMi-a promis, vreun copil,\n\nCă rămâne și a plecat,\n\nÎntr-o promisiune,\n\nCă am vând un refren,\n\nABAB, 7 silabe,\n\n4 versuri,\n\nÎntr-o zi de iutate."
+    },
+    {
+      "id": 43,
+      "model": "phi-3-mini",
+      "prompt": "Scrie-mi o strofă de dragoste, 4 versuri, rimă ABAB. Cu silabele te las pe tine.",
+      "theme": "dragoste",
+      "expected_constraints": {
+        "rhyme_scheme": "ABAB",
+        "lines": 4
+      },
+      "output": "În lumea dragostei, vreau să-ți spui,\n\nCei care își simte într-o lume mai bună.\n\nDragostea ne-ar face să ne întâlnim,\n\nÎntr-o zi de plouă, cu dragostea în mâna."
+    },
+    {
+      "id": 44,
+      "model": "phi-3-mini",
+      "prompt": "8 silabe pe vers: un refren despre vară, restul îți las ție.",
+      "theme": "vară",
+      "expected_constraints": {
+        "syllables_per_line": 8
+      },
+      "output": "În versul \"8 silabe pe vers: un refren despre vară, restul îți las ție\", vrem să folosim o structură care să respecte limitația de 8 silabe pe versul și să adopționez o formă care să transmite ideea principale. Acest lucru poate fi folosit într-un text de poezie care se referă la vară, iar restul său las ție să fie un refren pe care se referă poezie.\n\nVersul final poate fi schimbat pentru a menține acest structur și pentru a transmite ideea principal:\n\n\"Vară, vrem să ne văd,\nCătre lumina, într-un zodie,\nCătre vremuri, într-un zodie,\nCătre vremuri, într-un zodie,\nCătre vremuri, într-un zodie,\nCătre vremuri, într-un zodie,\nCătre vremuri, într-un zodie,\nCătre vremuri, într-un zodie,\nRestul săi, într-un zodie,\nRestul săi, într-un z"
+    },
+    {
+      "id": 45,
+      "model": "phi-3-mini",
+      "prompt": "Poți scrie ceva despre ploaie? Să aibă rimă împerecheată, atât.",
+      "theme": "ploaie",
+      "expected_constraints": {
+        "rhyme_scheme": "AABB"
+      },
+      "output": "Ploaie este un indicat de mediu de plămă, precum și un indicat de mediu de plămă pentru pădure. Este un indicat de mediu de plămă important pentru agriculturile, păstrind pădure și aflate, precum și pentru a asigura că pădurele nu se pierde în timpul colturilor. Ploaie este un indicat de mediu de plămă important pentru a asigura că pădurele nu se pierde în timpul colturilor, precum și pentru a asigura că pădurele sunt în condiții de plămă bune pentru a se multiplica. Ploaie este un indicat de mediu de plămă important pentru a asigura că pădurele sunt în condiții de plămă bune pentru a se multiplica, precum și pentru a asigura că pădurele nu se pierde în timpul colturilor. Ploaie este un indicat de mediu de plămă important pentru a asigura că pădurele nu se pierde în timpul colturilor, precum și pentru a asigura că pădurele sunt în condiții de plă"
+    },
+    {
+      "id": 46,
+      "model": "phi-3-mini",
+      "prompt": "Dă-mi 6 versuri despre libertate.",
+      "theme": "libertate",
+      "expected_constraints": {
+        "lines": 6
+      },
+      "output": "Libertate este un concept vital pentru a fi o persoană a fiată în acestul țară.\n\n1. Libertate este un lucru esențial, cât să ne permite să ne trăim în libertate, să ne spunem ce ce ne-am întâmpit și să ne părim în ce în ce.\n2. Pentru a cunoaște și a înțelege perspectiva alții, libertate este esențială, deoarece acest lucru permite interacțiunea și înțelegerea altrilor.\n3. Libertate este un element esențial pentru a fi un persoană responsabilă, deci că ar trebui să ne respectă și să ne ajutăm la altora.\n4. Libertate este un aspect important pentru a fi un persoană a fiat în acestul țară, deci că ar trebui să ne respectă și să ne ajutăm la statul.\n5. Libertate este un aspect esențial pentru a fi un persoană a fiat în acestul țară, deci că ar trebui să ne respectă și să ne ajutăm la familia și amicii.\n6. Libertate este un concept"
+    },
+    {
+      "id": 47,
+      "model": "phi-3-mini",
+      "prompt": "Un refren pop despre prietenie, ceva cu ritm alert.",
+      "theme": "prietenie",
+      "expected_constraints": {},
+      "output": "Un refren pop despre prietenie, ceva cu ritm alert, ar putea fi \"Shake It Off\" de Taylor Swift. Aceasta poate fi interpretată ca o prietenie care se desenează cu rapiditate, așa cum se face într-un refren pop."
+    },
+    {
+      "id": 48,
+      "model": "phi-3-mini",
+      "prompt": "scrie ceva despre mare",
+      "theme": "mare",
+      "expected_constraints": {},
+      "output": "Aceasta este o frază care se traduce în limba engleză ca \"write something about the sea\". Acest text poate fi utilizat ca o instruire pentru a se descurca despre oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care se confruntă cu oamenii care"
+    },
+    {
+      "id": 49,
+      "model": "phi-3-mini",
+      "prompt": "Vreau ceva trist, 4 versuri, 10 silabe, fără rimă anume.",
+      "theme": "tristețe",
+      "expected_constraints": {
+        "lines": 4,
+        "syllables_per_line": 10
+      },
+      "output": "Într-o zi de sfârșit,\n\nSunetul lumii,\n\nSolele sunt în perechea,\n\nSă-ți vădă, vă spune.\n\n\nÎntr-o zi de sfârșit,\n\nSunetul lumii,\n\nSolele sunt în perechea,\n\nSă-ți vădă, vă spune."
+    },
+    {
+      "id": 50,
+      "model": "phi-3-mini",
+      "prompt": "La apus, pe faleză. Un refren despre o plimbare de-a lungul mării, 4 versuri, ABBA, 7 silabe.",
+      "theme": "plimbare pe faleză",
+      "expected_constraints": {
+        "rhyme_scheme": "ABBA",
+        "lines": 4,
+        "syllables_per_line": 7
+      },
+      "output": "Într-o zi de plou,\n\nPe măsura, pe faleză,\n\nApus, pe plimbare,\n\n4 versuri, ABBA, 7 silabe."
+    }
+  ]
+}
