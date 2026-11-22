@@ -91,3 +91,42 @@ local lexicon loading, stress-to-phoneme alignment, and extraction; Stage 3 adds
 dedicated tests and a coverage measurement; Stage 4 documents actual usage and runs
 the final integration checks. No model, syllable-counter, or MCP-server changes
 are needed for Stage 1.
+
+## Stage 2: local setup and observed behavior
+
+The official [RACAI archive](https://www.racai.ro/p/reterom/rapoarte/lexicon_reterom_final.zip)
+was inspected: `lexicon_reterom_final.txt` has 330,866 six-column rows. The code
+reads this original file without creating a redistributed derivative lexicon.
+Attribution: Beáta Lőrincz, Elena Irimia, Adriana Stan, Verginica Barbu Mititelu,
+*RoLEX: The development of an extended Romanian lexical dataset and its evaluation
+at predicting concurrent lexical information*. See the resource links above for
+the authors' citation and applicable CC BY-NC-ND 4.0 terms.
+
+Download and unzip the archive locally. Default file location:
+`data/raw/rolex/lexicon_reterom_final.txt` (`data/raw/` is ignored by Git).
+For a different location, set the environment variable before starting Python
+or the MCP server:
+
+```powershell
+$env:LMUSIC_ROLEX_PATH = "C:\path\to\lexicon_reterom_final.txt"
+```
+
+No extra Python dependencies are required. The lexicon is indexed once per path
+and cached; restart the process after replacing the file. A missing, empty, or
+structurally malformed file returns a setup error through the existing error
+response shape. Unknown, ambiguous, or unalignable words have empty endings and
+cannot pass verification, including when their scheme label occurs only once.
+
+Alignment uses the stressed spelling to locate the syllable, then selects the
+corresponding SAMPA vowel nucleus. It checks matching vowel identity and equal
+syllable/nucleus counts. Unsupported phones or inconsistent annotations remain
+unresolved. This is a guarded alignment procedure, not a claim that all source
+annotations or resulting tails are correct.
+
+Important validation refinement: RoLEX includes both noun and verb readings of
+`casă` and `masă`, with different stressed tails. Without part-of-speech/context
+disambiguation, these words intentionally remain unresolved. Use their noun
+readings as isolated parser fixtures later, not as unambiguous full-lexicon
+positive cases. `casă/frumoasă` is therefore not a reliable negative-only example
+either: the verb reading can have the same tail. This illustrates why last-two-
+letter matching and silent pronunciation selection are inadequate.
